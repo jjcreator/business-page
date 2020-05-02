@@ -1,0 +1,190 @@
+
+#showcase {
+    background-image: url(/city.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+#showcaseTitle {
+    padding-top: 50px;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 3px black;
+    
+}
+
+#showcaseBody {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcaseDescription {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 40%;
+    border: 3px solid #F9DC5C;
+    border-left: none;
+    margin-left: 0%;
+    overflow: hidden;
+}
+
+#showcaseDescription h2 {
+    margin-top: 2%;
+    font-weight: bold;
+    letter-spacing: 15%;
+}
+
+#showcaseDescription p {
+    padding: 25px 15px 15px 15px;
+    line-height: 2;
+    text-justify: inter-word;
+    color: white;
+}
+
+#showcaseButton {
+    cursor: pointer;
+    margin-bottom: 4%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ED254E;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    transition: 0.1s ease-in;
+}
+
+#showcaseButton:hover {
+    transform: translateY(2%);
+    background-color: rgb(190, 29, 61);
+    
+}
+
+#teamImg {
+    width: 50%;
+    height: 80%;
+    background-image: url(/people.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    box-shadow: -4px 4px 10px black;
+    overflow: hidden;
+}
+
+#showcase h1, #showcase h2 {
+    z-index: 2;
+}
+
+#showcase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3, 3, 78, 0.493);
+}
+
+#principles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+#principlesShape {
+    background-color: #011936;
+    transform: skew(-20deg);
+    min-width: 35%;
+    padding: 15px;
+   
+}
+
+#principles h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    transform: skew(20deg);
+}
+
+#list {
+    padding: 40px;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#list li {
+    width: 33%;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.icon {
+    color: #ED254E;
+    padding: 10px;
+}
+
+.secondaryHeader {
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+#missionStatement {
+    margin-top: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#missionStatement p {
+    font-size: 20px;
+    line-height: 2.5;
+    border: 2px solid #011936;
+    border-right: none;
+    padding: 25px;
+    width: 55%;
+    margin: 0;
+}
+
+#missionStatement p span {
+    text-transform: uppercase;
+    color: #ED254E;
+    font-weight: bold;
+}
+
+#missionImg {
+    background-image: url(/man-in-black-holding-phone-618613.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 45%;
+    box-shadow: 2px 2px 5px black;
+}

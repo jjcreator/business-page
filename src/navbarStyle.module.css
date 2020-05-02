@@ -1,0 +1,76 @@
+.myNavbar {
+    overflow: hidden;
+    height: 100%;
+    width: 15vw;
+    justify-content: flex-start;
+    z-index: 2;
+    background-color: #5B2AAF;
+    position: fixed;
+}
+
+#wave {
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#links {
+    flex: 1;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #011936;
+    z-index: 10;
+}
+
+.link {
+    color: white;
+    font-size: 20px;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;  
+}
+
+#logo {
+    height: 25%;
+    font-size: 25px;
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: space-evenly;
+}
+
+#logo p {
+    padding: 0px 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+#imageContainer {
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    position: relative;
+    border: double #011936 7px;
+}
+
+#logoImg {
+    width: 70%;
+    margin-left: 2px;
+}
+

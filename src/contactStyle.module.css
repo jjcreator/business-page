@@ -1,0 +1,20 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 44vh;
+    background-color: blue;
+}
+
+#submit {
+    width: 20%;
+}
