@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from "./Navbar"
+import Navbar from "./components/Navbar"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
-import Main from './Main';
-import About from './About';
-import Contact from './Contact';
+import Main from './components/Main';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   return (

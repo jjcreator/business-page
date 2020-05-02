@@ -106,6 +106,7 @@
     align-items: center;
     justify-content: center;
     padding: 40px;
+    margin-top: 50px;
 }
 
 #principlesShape {
@@ -127,16 +128,19 @@
     padding: 40px;
     list-style-type: none;
     font-size: 20px;
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr 1fr;
+    grid-gap: 50px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
 #list li {
-    width: 33%;
     text-align: center;
     font-size: 22px;
+    
+    justify-self: start;
 
 }
 
@@ -167,11 +171,12 @@
 #missionStatement p {
     font-size: 20px;
     line-height: 2.5;
-    border: 2px solid #011936;
+    border: 5px groove #011936;
     border-right: none;
-    padding: 25px;
+    padding: 30px;
     width: 55%;
     margin: 0;
+    background:#00183610;
 }
 
 #missionStatement p span {
@@ -187,4 +192,52 @@
     height: 100%;
     width: 45%;
     box-shadow: 2px 2px 5px black;
+}
+
+#callToAction {
+    background-image: url(/phone.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 100px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+    padding: 50px;
+}
+
+
+
+#callToAction p {
+    line-height: 2;
+    font-weight: bold;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+#callToAction span {
+    color: red;
+}
+
+#contact {
+    background-color: rgba(3, 3, 78, 0.493);
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5%;
+    width: 30%;
+    transition: 0.10s ease-in;
+}
+
+#contact:hover {
+    background-color: rgb(3, 3, 78);
 }

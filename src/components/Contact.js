@@ -1,5 +1,5 @@
 import React, {useReducer} from 'react'
-import styles from "./contactStyle.module.css"
+import styles from "../modules/contactStyle.module.css"
 
 const initialState = {
     username: "",
