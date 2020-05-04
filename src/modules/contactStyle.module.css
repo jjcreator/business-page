@@ -40,10 +40,6 @@
     margin: 10px;
 }
 
-#form input[type="submit"] {
-    width: 20%;
-}
-
 #form textarea {
     width: 80%;
     height: 40%;
@@ -52,7 +48,7 @@
 }
 
 #submit {
-    width: 50%;
+    width: 30%;
     background-color: #ED254E;
     color: white;
     font-weight: bold;
@@ -63,7 +59,7 @@
 }
 
 #traditionalContact {
-    color: black;
+    color: #011936;
     height: 60%;
 }
 
@@ -94,6 +90,37 @@
     height: 100%;
     border: 1px solid grey;
     background-color: white;
+    width: 50%;
+}
+
+.column:first-child {
+    margin-right: 2%;
+}
+
+.column h3 {
+    padding: 10px;
+}
+
+.column ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+}
+
+.column ul li {
+    padding: 5px 0px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.column ul li i {
+    color: #ED254E;
+    padding-right: 5px;
 }
 
 .bold {
