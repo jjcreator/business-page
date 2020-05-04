@@ -1,16 +1,17 @@
-import React, {useReducer} from 'react'
+import React from 'react'
 import styles from "../modules/contactStyle.module.css"
 import Shape from './Shape';
 import Form from '../modules/Form';
+import TraditionalContact from './TraditionalContact';
 
 function Contact() {
     
     return (
         <div id={styles.contact}>
-        <Shape text="Contact us"/>
-        <div id={styles.mainContactBox}>
-            <Form/>
-            
+            <Shape text="Contact us"/>
+            <div id={styles.mainContactBox}>
+                <Form/>
+                <TraditionalContact/>
             </div>
         </div>
     )
