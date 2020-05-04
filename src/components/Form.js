@@ -58,7 +58,7 @@ function Form() {
                 <input placeholder="Your email" type="email" name="email" value={messageData.email} onChange={handleFormInputChange}/>
                 <input type="text" placeholder="Subject" name="title" value={messageData.title} onChange={handleFormInputChange}/>
                 <textarea placeholder="Message" name="message" value={messageData.message} onChange={handleFormInputChange}></textarea>
-                <input id={styles.submit} type="submit" value="Send"/>
+                <input type="submit" value="Send"/>
         </form>
     )
 }
