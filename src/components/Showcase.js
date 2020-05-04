@@ -4,7 +4,7 @@ import styles from "../modules/mainStyle.module.css"
 function Showcase() {
     return (
         <section id={styles.showcase}>
-            <h1 id={styles.showcaseTitle}>Premium legal consulting service</h1>
+            <h1 id={styles.showcaseTitle}>United Law Counselors</h1>
             <div id={styles.showcaseBody}>
                 <div id={styles.teamImg}/>
                 <div id={styles.showcaseDescription}>

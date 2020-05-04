@@ -19,7 +19,13 @@
     font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 3px black;
-    
+    text-transform: uppercase;
+}
+
+#showcaseSecondaryTitle {
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
 }
 
 #showcaseBody {
@@ -109,21 +115,6 @@
     margin-top: 50px;
 }
 
-#principlesShape {
-    background-color: #011936;
-    transform: skew(-20deg);
-    min-width: 35%;
-    padding: 15px;
-   
-}
-
-#principles h2 {
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    transform: skew(20deg);
-}
-
 #list {
     padding: 40px;
     list-style-type: none;
@@ -139,9 +130,8 @@
 #list li {
     text-align: center;
     font-size: 22px;
-    
     justify-self: start;
-
+    min-width: 33%;
 }
 
 .icon {
