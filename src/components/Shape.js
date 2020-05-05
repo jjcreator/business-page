@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from "../modules/mainStyle.module.css"
 
 function Shape(props) {
     const shapeStyle = {
-            backgroundColor: "#011936",
-            transform: "skew(-20deg)",
-            minWidth: "35%",
-            padding: "15px"
+        backgroundColor: "#011936",
+        transform: "skew(-20deg)",
+        minWidth: "35%",
+        width: "fit-content",
+        padding: "15px"
     }
 
     const textStyle = {

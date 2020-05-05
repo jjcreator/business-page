@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from "./components/Navbar"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
-import Main from './components/Main';
-import About from './components/About';
-import Contact from './components/Contact';
+import Main from './components/MainPage/Main';
+import About from './components/AboutPage/About';
+import Contact from './components/ContactPage/Contact';
 
 function App() {
   return (

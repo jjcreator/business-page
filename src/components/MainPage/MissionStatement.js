@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../modules/mainStyle.module.css"
+import styles from "../../modules/mainStyle.module.css"
 
 function MissionStatement() {
     return (

@@ -160,19 +160,22 @@
 
 #missionStatement p {
     font-size: 20px;
-    line-height: 2.5;
-    border: 5px groove #011936;
+    line-height: 2;
+    border: 3px solid #011936;
     border-right: none;
     padding: 30px;
     width: 55%;
     margin: 0;
-    background:#00183610;
+
 }
 
 #missionStatement p span {
     text-transform: uppercase;
     color: #ED254E;
     font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+    padding-right: 5px;
 }
 
 #missionImg {
@@ -198,8 +201,6 @@
     box-shadow: 2px 2px 5px black;
     padding: 50px;
 }
-
-
 
 #callToAction p {
     line-height: 2;

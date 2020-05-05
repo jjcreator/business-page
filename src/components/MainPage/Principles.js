@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from "../modules/mainStyle.module.css"
-import Shape from "./Shape"
+import styles from "../../modules/mainStyle.module.css"
+import Shape from "../Shape"
 
 function Principles() {
     return (
