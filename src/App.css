@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+
 .mainContainer {
   display: flex;
   width: 100%;
@@ -10,4 +11,11 @@
   background-color: rgb(237, 243, 242);
   margin-left: 15vw;
   z-index: 200;
+}
+
+@media (max-width: 767px) {
+  .pageContainer {
+    margin-left: 0;
+    margin-top: 15vh;
+  }
 }

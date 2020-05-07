@@ -42,6 +42,7 @@ function Form() {
             case "message": 
                 dispatch({type: "SET_MESSAGE", value: e.target.value});
                 break;
+            default: break;
         }
     }
 
