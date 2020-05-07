@@ -1,31 +1,52 @@
+/* Showcase styles */
 
 #showcase {
     background-image: url(/city.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 75vh;
-    color: white;
+    height: 100vh;
+    color: var(--showcase-color);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#showcase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3, 3, 78, 0.493);
 }
 
 #showcaseTitle {
     padding-top: 50px;
-    font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 7px;
     text-shadow: 1px 1px 3px black;
     text-transform: uppercase;
+    animation: pop 0.7s forwards ease-in;
 }
 
-#showcaseSecondaryTitle {
-    padding: 10px;
-    font-size: 22px;
-    text-align: center;
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: translateY(1%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 #showcaseBody {
@@ -34,6 +55,7 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
+    animation: pop 0.7s forwards ease-in;
 }
 
 #showcaseDescription {
@@ -42,7 +64,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 70%;
+    height: 50%;
     width: 40%;
     border: 3px solid #F9DC5C;
     border-left: none;
@@ -73,17 +95,17 @@
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
     transition: 0.1s ease-in;
+    
 }
 
 #showcaseButton:hover {
     transform: translateY(2%);
     background-color: rgb(190, 29, 61);
-    
 }
 
 #teamImg {
     width: 50%;
-    height: 80%;
+    height: 65%;
     background-image: url(/people.jpg);
     background-position: center;
     background-size: cover;
@@ -96,17 +118,40 @@
     z-index: 2;
 }
 
-#showcase::before {
-    content: "";
+#doubleArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(3, 3, 78, 0.493);
+    bottom: 3%;
+    color: var(--showcase-color);
+    font-size: 25px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 25px;
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
 }
 
-#principles {
+#doubleArrow:hover {
+    animation: flashing 0.5s ease-in infinite alternate;
+}
+
+@keyframes flashing {
+    0% {
+        color:var(--showcase-color);
+        height: 25px;
+    }
+    100% {
+        color: transparent;
+        height: 50px;
+    }
+}
+
+.principles {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,4 +276,18 @@
 
 #contact:hover {
     background-color: rgb(3, 3, 78);
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    #showcaseBody {
+        flex: 1;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }

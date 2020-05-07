@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import styles from "../../modules/mainStyle.module.css"
 import Shape from "../Shape"
 
 function Principles() {
+    
     return (
-        <section id={styles.principles}>
+        <section id="principles" className={styles.principles}>
                 <Shape text="Our core principles"/>
                 <ul id={styles.list}>
                     <li><i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet</li>

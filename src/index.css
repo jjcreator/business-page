@@ -1,5 +1,9 @@
 :root {
   --box-shadow: 2px 2px 5px black;
+  --showcase-color: white;
+  --primary-color: rgb(1,25,54);
+  --tertiary-color: rgb(249,220,92);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,9 +15,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   box-sizing: border-box;
+  
 }
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -5,6 +5,7 @@ import './App.css';
 import Main from './components/MainPage/Main';
 import About from './components/AboutPage/About';
 import Contact from './components/ContactPage/Contact';
+import Principles from './components/MainPage/Principles';
 
 const imageSources = ["/phone.jpg","/city.jpg", "/email.jpg", "/man-in-black-holding-phone-618613.jpg", "/people.jpg", "/phone.jpg", "/team.jpg"];
 
