@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Navbar from "./components/Navbar"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
 import Main from './components/MainPage/Main';
 import About from './components/AboutPage/About';
 import Contact from './components/ContactPage/Contact';
-import Principles from './components/MainPage/Principles';
 
 const imageSources = ["/phone.jpg","/city.jpg", "/email.jpg", "/man-in-black-holding-phone-618613.jpg", "/people.jpg", "/phone.jpg", "/team.jpg"];
 
@@ -19,7 +18,6 @@ function App() {
       images[index] = new Image();
       images[index].src = srcText;
     });
-    console.log(images)
   }, []);
 
   return (

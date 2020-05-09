@@ -1,15 +1,18 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from "../../modules/mainStyle.module.css"
-import { Link } from "react-router-dom"
 
 function Showcase() {
-    // clickHandler = () => {
+    const [display, setDisplay] = useState({display: "none"});
+    const [animated, setAnimated] = useState(null)
+        useEffect(()=> {
+        setDisplay({display: "flex"})
+        setAnimated(styles.animated)
+    },[]);
 
-    // }
     return (
-        <section id={styles.showcase}>
-            <h1 id={styles.showcaseTitle}>United Law Counselors</h1>
-            <div id={styles.showcaseBody}>
+        <section id={styles.showcase} style={display}>
+            <h1 className={animated} id={styles.showcaseTitle}>United Law Counselors</h1>
+            <div className={animated} id={styles.showcaseBody}>
                 <div id={styles.teamImg}/>
                 <div id={styles.showcaseDescription}>
                     <h2>Have the law on your side</h2>

@@ -33,7 +33,10 @@
     letter-spacing: 7px;
     text-shadow: 1px 1px 3px black;
     text-transform: uppercase;
-    animation: pop 0.7s forwards ease-in;
+}
+
+.animated {
+animation: pop 0.7s forwards ease-in;
 }
 
 @keyframes pop {
@@ -55,7 +58,6 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    animation: pop 0.7s forwards ease-in;
 }
 
 #showcaseDescription {
@@ -230,6 +232,23 @@
     height: 100%;
     width: 45%;
     box-shadow: 2px 2px 5px black;
+}
+
+#testimonialsSection {
+    display: flex;
+    margin-top: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#testimonials {
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
 }
 
 #callToAction {

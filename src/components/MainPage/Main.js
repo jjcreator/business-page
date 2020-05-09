@@ -3,6 +3,7 @@ import Showcase from "./Showcase.js"
 import Principles from "./Principles.js"
 import MissionStatement from './MissionStatement'
 import CallToAction from "./CallToAction"
+import Testimonials from './Testimonials.js'
 
 function Main() {
     return (
@@ -10,6 +11,7 @@ function Main() {
             <Showcase/>
             <Principles/>
             <MissionStatement/>
+            <Testimonials/>
             <CallToAction/>
         </div>
     )

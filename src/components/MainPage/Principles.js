@@ -1,11 +1,15 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useLayoutEffect} from 'react'
 import styles from "../../modules/mainStyle.module.css"
 import Shape from "../Shape"
 
 function Principles() {
-    
+    const principlesRef = useRef()
+    useLayoutEffect(()=> {
+        console.log(principlesRef)
+    }, []);
+
     return (
-        <section id="principles" className={styles.principles}>
+        <section ref={principlesRef} id="principles" className={styles.principles}>
                 <Shape text="Our core principles"/>
                 <ul id={styles.list}>
                     <li><i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet</li>
