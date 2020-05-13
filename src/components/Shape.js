@@ -2,10 +2,10 @@ import React from 'react'
 
 function Shape(props) {
     const shapeStyle = {
-        backgroundColor: "#011936",
+        backgroundColor: "var(--primary-color)",
         transform: "skew(-20deg)",
-        minWidth: "35%",
-        width: "fit-content",
+        width: "26vw",
+        minWidth: "fit-content",
         padding: "15px"
     }
 

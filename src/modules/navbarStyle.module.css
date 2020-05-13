@@ -4,7 +4,7 @@
     width: 12vw;
     justify-content: flex-start;
     z-index: 2;
-    background-color: #0055bd;
+    background-color: var(--secondary-color);
     position: fixed;
 }
 
@@ -27,7 +27,7 @@
     flex: 1;
     justify-content: space-evenly;
     width: 100%;
-    background-color: #011936;
+    background-color: var(--primary-color);
     z-index: 10;
 }
 
@@ -55,7 +55,8 @@
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
     text-shadow: 2px 2px 5px black;
 }
 

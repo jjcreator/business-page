@@ -159,7 +159,7 @@ animation: pop 0.7s forwards ease-in;
     align-items: center;
     justify-content: center;
     padding: 40px;
-    margin-top: 50px;
+    margin-top: 12vh;
 }
 
 #list {
@@ -195,6 +195,14 @@ animation: pop 0.7s forwards ease-in;
     font-weight: bold;
 }
 
+.ourMission {
+    margin-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 #missionStatement {
     margin-top: 25px;
@@ -203,17 +211,17 @@ animation: pop 0.7s forwards ease-in;
     justify-content: center;
     align-items: center;
     height: 50vh;
+    
 }
 
 #missionStatement p {
     font-size: 20px;
     line-height: 2;
-    border: 3px solid #011936;
+    border: 3px solid var(--primary-color);
     border-right: none;
     padding: 30px;
     width: 55%;
     margin: 0;
-
 }
 
 #missionStatement p span {
@@ -236,12 +244,17 @@ animation: pop 0.7s forwards ease-in;
 
 #testimonialsSection {
     display: flex;
-    margin-top: 20vh;
+    margin-top: 10vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
 }
+
+#testimonialsHeader {
+    margin-bottom: 5vh;
+}
+
 
 #testimonials {
     display: grid;
@@ -249,7 +262,75 @@ animation: pop 0.7s forwards ease-in;
     justify-items: center;
     align-items: center;
     width: 100%;
+    grid-gap: 50px;
 }
+
+.testimonialCard {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-color);
+    box-shadow: 2px 2px 5px black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
+.quote {
+    font-size: 20px;
+    padding: 0px 20px;
+    color: var(--attention-color);
+}
+
+.quoteLeft {
+    margin-right: auto;
+}
+
+.quoteRight {
+    margin-left: auto;
+}
+
+.testimonialTextBox {
+    flex-basis: 90%;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--showcase-color);
+}
+
+.testimonialTextBox p {
+    padding: 0px 55px;
+}
+
+.testimonialFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    flex-basis: 10%;
+    align-items: flex-start;
+}
+
+.testimonialFooter p {
+    font-size: 20px;
+    font-weight: light;
+    padding: 0 20px;
+    color: var(--showcase-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
 
 #callToAction {
     background-image: url(/phone.jpg);

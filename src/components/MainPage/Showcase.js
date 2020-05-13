@@ -19,7 +19,7 @@ function Showcase() {
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
                     <div id={styles.showcaseButton}>Get help now</div>
                 </div>
-                <a id={styles.doubleArrow} href="#principles">
+                <a id={styles.doubleArrow} href="#ourMission">
                     <i className="fas fa-angle-double-down"></i>
                 </a>
                 

@@ -9,8 +9,8 @@ function Main() {
     return (
         <div>
             <Showcase/>
-            <Principles/>
             <MissionStatement/>
+            <Principles/>
             <Testimonials/>
             <CallToAction/>
         </div>
