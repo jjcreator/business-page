@@ -34,12 +34,12 @@
 .link {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .link:hover {
-    text-decoration: none;
     color: white;
-    font-weight: bold;  
+    text-decoration: none;
 }
 
 #logo {
