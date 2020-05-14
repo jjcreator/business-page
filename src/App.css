@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display&display=swap');
 
-body::after{
-  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-  content:url(/city.jpg) url(/business_page/public/email.jpg) url(/business_page/public/man-in-black-holding-phone-618613.jpg) url(/business_page/public/people.jpg) url(/business_page/public/phone.jpg) url(/business_page/public/team.jpg)
-}
-
 .mainContainer {
   display: flex;
   width: 100%;
@@ -15,7 +10,6 @@ body::after{
   background-color: rgb(237, 243, 242);
   margin-left: 12vw;
   z-index: 200;
-  
 }
 
 @media (max-width: 767px) {

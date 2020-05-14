@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
-import { NavLink} from "react-router-dom"
+import React from 'react'
+import { NavLink } from "react-router-dom"
 import styles from "../modules/navbarStyle.module.css"
 
 function Navbar() {
-    const [selected, setSelected] = useState("Home")
-
+  
     return (
         <nav className={`${styles.myNavbar} ${styles.flexColumn}`}>
             <div className={styles.flexColumn} id={styles.logo}>
