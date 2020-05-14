@@ -1,19 +1,25 @@
 import React from 'react'
 import styles from "../../modules/mainStyle.module.css"
+import ScrollAnimation from "react-animate-on-scroll"
 
 function TestimonialCard(props) {
     return (
-        <div className={styles.testimonialCard}> 
-            <div className={styles.testimonialTextBox}>
-                <i className={`fas fa-quote-left ${styles.quote} ${styles.quoteLeft}`}/>
-                <p>{props.text}</p>
-                <i className={`fas fa-quote-right ${styles.quote} ${styles.quoteRight}`}/>        
+        <ScrollAnimation animateIn="zoomIn" animateOnce={false} duration={1.2} delay={props.animationDelay} offset={200}>
+            <div className={`${styles.testimonialCard} animate__zoomIn animate__delay-${props.animationDelay}s`}>
+                <div className={styles.testimonialTop}>
+                    <img className={styles.testimonialImg} src={props.imgSrc}/> 
+                </div>
+                <div className={styles.testimonialTextBox}>
+                    <i className={`fas fa-quote-left ${styles.quote} ${styles.quoteLeft}`}/>
+                    <p>{props.text}</p>
+                    <i className={`fas fa-quote-right ${styles.quote} ${styles.quoteRight}`}/>        
+                </div>
+                <div className={styles.testimonialFooter}>
+                    <span className={styles.authorName}>{props.name}</span><span className={styles.authorCity}>{props.city}</span>
+                </div>
+                
             </div>
-            <div className={styles.testimonialFooter}>
-                <p>{props.name}</p>
-            </div>
-            
-        </div>
+        </ScrollAnimation>
     )
 }
 

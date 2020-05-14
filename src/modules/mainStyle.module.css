@@ -238,7 +238,26 @@ animation: pop 0.4s forwards ease-in;
     background-size: cover;
     height: 100%;
     width: 45%;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: var(--box-shadow)
+}
+
+.roundedLine {
+    border-top: 5px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-top: 20vh;
+}
+
+.expand {
+    animation: expand 0.5s ease-in forwards;
+}
+
+@keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 30%;
+    }
 }
 
 #testimonialsSection {
@@ -248,38 +267,55 @@ animation: pop 0.4s forwards ease-in;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    border: 2px solid blue;
 }
-
-#testimonialsHeader {
-    margin-bottom: 5vh;
-}
-
 
 #testimonials {
-    display: grid;
-    grid-template: 1fr/ 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    grid-gap: 25px;
+    margin-top: 10%;
+    border: 2px solid green;
 }
 
 .testimonialCard {
-    width: 80%;
-    height: 300px;
+    width: 350px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--primary-color);
     box-shadow: 2px 2px 5px black;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    overflow: hidden;
+    position: relative;
+    margin: 0 50px;
+    justify-content: flex-end;
+}
+
+.testimonialTop {
+    background-color: var(--secondary-color);
+    width: 100%;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.testimonialImg {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    bottom: -60px;
+    margin: 0 auto;
+    z-index: 3;
+    border: 5px solid var(--showcase-color);
+    box-shadow: 3px 3px 5px solid black;
+
 }
 
 .quote {
-    font-size: 20px;
-    padding: 0px 20px;
+    font-size: 18px;
     color: var(--attention-color);
 }
 
@@ -292,17 +328,17 @@ animation: pop 0.4s forwards ease-in;
 }
 
 .testimonialTextBox {
-    flex-basis: 90%;
+    flex-basis: 60%;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 18px;
-    text-align: center;
+    font-size: 16px;
     background-color: var(--showcase-color);
+    color: var(--primary-color)
 }
 
 .testimonialTextBox p {
@@ -313,23 +349,22 @@ animation: pop 0.4s forwards ease-in;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--secondary-color);
-    flex-basis: 10%;
-    align-items: flex-start;
-}
-
-.testimonialFooter p {
-    font-size: 20px;
-    font-weight: light;
-    padding: 0 20px;
-    color: var(--showcase-color);
-    display: flex;
-    justify-content: center;
+    flex-basis: 20%;
     align-items: center;
-    height: 100%;
+    background-color: var(--secondary-color);
+    color: var(--showcase-color);
 }
 
+.authorCity {
+    font-size: 16px;
+    padding: 0 5px;
+    text-transform: none;
+}
 
+.authorName {
+    font-size: 20px;
+    font-weight: bolder;
+}
 
 #callToAction {
     background-image: url(/phone.jpg);
@@ -371,6 +406,10 @@ animation: pop 0.4s forwards ease-in;
     margin: 0 5%;
     width: 30%;
     transition: 0.10s ease-in;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact:hover {

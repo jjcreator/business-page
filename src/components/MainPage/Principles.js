@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../../modules/mainStyle.module.css"
 import Shape from "../Shape"
 import ScrollAnimation from "react-animate-on-scroll"
+import ExpandingLine from './ExpandingLine'
 const chosenAnimation = "fadeInUp"
 const duration = 1.2;
 
@@ -32,6 +33,7 @@ function Principles() {
                             <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
                         </ScrollAnimation>
                     </div>
+                    <ExpandingLine animationDuration={0.5} animationDelay={1750}/>
             </section>
         </ScrollAnimation>
     )
