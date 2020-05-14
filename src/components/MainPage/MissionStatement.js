@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 function MissionStatement() {
     return (
-        <ScrollAnimation animateIn={styles.animated} animateOnce={true}>
+        <ScrollAnimation animateIn={styles.animated} animateOnce={true} duration={0.4}>
             <section id="ourMission" className={styles.ourMission}>
                 <Shape text="Our mission"/>
                 <div id={styles.missionStatement}>

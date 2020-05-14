@@ -7,7 +7,7 @@ const testimonialText = "Itaque earum rerum hic tenetur a sapiente delectus, ut 
 
 function Testimonials() {
     return (
-        <ScrollAnimation animateIn={styles.animated} animateOnce={true} offset={250}>
+        <ScrollAnimation animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
             <section id={styles.testimonialsSection}>
                 <h2 className={styles.secondaryHeader} id={styles.testimonialsHeader}>See what others say about us</h2>
                 <div id={styles.testimonials}>

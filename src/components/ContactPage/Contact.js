@@ -7,7 +7,7 @@ import TraditionalContact from './TraditionalContact';
 function Contact() {
     
     return (
-        <div id={styles.contact}>
+        <div id={styles.contact} className={styles.animated}>
             <Shape text="Contact us"/>
             <div id={styles.mainContactBox}>
                 <Form/>

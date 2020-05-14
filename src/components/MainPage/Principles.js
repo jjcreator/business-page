@@ -2,21 +2,36 @@ import React from 'react'
 import styles from "../../modules/mainStyle.module.css"
 import Shape from "../Shape"
 import ScrollAnimation from "react-animate-on-scroll"
+const chosenAnimation = "fadeInUp"
+const duration = 1.2;
+
 
 function Principles() {
 
     return (
-        <ScrollAnimation animateIn={styles.animated} animateOnce={true}>
-            <section id="principles" className={styles.principles}>
+        <ScrollAnimation animateIn={styles.animated} animateOnce={false} duration={0.5}>
+            <section className={styles.principles}>
                     <Shape text="Our core principles"/>
-                    <ul id={styles.list}>
-                        <li><i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet</li>
-                        <li><i className={`fas fa-landmark ${styles.icon}`}></i>Consectetur adipiscing elit</li>
-                        <li><i className={`fas fa-landmark ${styles.icon}`}></i>Sed do eiusmod tempor incididunt</li>
-                        <li><i className={`fas fa-landmark ${styles.icon}`}></i>Sed do eiusmod tempor incididunt</li>
-                        <li><i className={`fas fa-landmark ${styles.icon}`}></i>Sed do eiusmod tempor incididunt</li>
-                        <li><i className={`fas fa-landmark ${styles.icon}`}></i>Sed do eiusmod tempor incididunt</li>
-                    </ul>
+                    <div id={styles.list}>
+                        <ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={250} offset={50}>
+                            <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
+                        </ScrollAnimation>
+                        <ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={500} offset={50}>
+                            <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
+                        </ScrollAnimation>
+                        <ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={750} offset={50}>
+                            <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
+                        </ScrollAnimation>
+                        <ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={1000} offset={50}>
+                            <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
+                        </ScrollAnimation>
+                        <ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={1250} offset={50}>
+                            <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
+                        </ScrollAnimation>
+                        <ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={1500} offset={50}>
+                            <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
+                        </ScrollAnimation>
+                    </div>
             </section>
         </ScrollAnimation>
     )

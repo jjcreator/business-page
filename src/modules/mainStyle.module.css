@@ -36,7 +36,7 @@
 }
 
 .animated {
-animation: pop 0.7s forwards ease-in;
+animation: pop 0.4s forwards ease-in;
 }
 
 @keyframes pop {
@@ -49,7 +49,6 @@ animation: pop 0.7s forwards ease-in;
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
 #showcaseBody {
@@ -174,7 +173,7 @@ animation: pop 0.7s forwards ease-in;
     width: 100%;
 }
 
-#list li {
+.listItem {
     text-align: center;
     font-size: 22px;
     justify-self: start;

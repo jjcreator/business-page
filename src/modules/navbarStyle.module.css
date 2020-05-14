@@ -50,28 +50,8 @@
     justify-content: space-evenly;
 }
 
-#logo p {
-    padding: 0px 5px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
+.logoImg {
+    width: 80%;
 }
 
-#imageContainer {
-    background-color: white;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    justify-content: center;
-    position: relative;
-    border: double #011936 7px;
-}
-
-#logoImg {
-    width: 70%;
-    margin-left: 2px;
-}
 

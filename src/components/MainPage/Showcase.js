@@ -9,11 +9,11 @@ function Showcase(props) {
     
     return (
         <section id={styles.showcase}>
-            <h1 className={styles.animated} id={styles.showcaseTitle}>United Law Counselors</h1>
+            <h1 className={styles.animated} id={styles.showcaseTitle}>Fake Lawyers</h1>
             <div className={styles.animated} id={styles.showcaseBody}>
                 <div id={styles.teamImg}/>
                 <div id={styles.showcaseDescription}>
-                    <h2>Have the law on your side</h2>
+                    <h2>Have the fake law on your side</h2>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
                     <div id={styles.showcaseButton}>Get help now</div>
                 </div>
