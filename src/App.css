@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Playfair+Display&display=swap');
 
 .mainContainer {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .pageContainer {
   flex: 1;
-  background-color: #edf3f2;
-  background: rgb(237,243,242);
+  background: #edf3f2;
   background: linear-gradient(107deg, rgba(237,243,242,1) 20%, rgba(255,255,255,1) 50%, rgba(237,243,242,1) 80%);
-  margin-left: 12vw;
-  z-index: 200;
+  margin-left: 11vw;
+  z-index: 20;
 }
 
 @media (max-width: 767px) {
   .pageContainer {
     margin-left: 0;
-    margin-top: 12vh;
   }
 }

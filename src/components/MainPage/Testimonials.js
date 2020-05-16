@@ -1,20 +1,71 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ScrollAnimation from "react-animate-on-scroll"
 import TestimonialCard from "./TestimonialCard.js"
 import styles from "../../modules/mainStyle.module.css"
 import Shape from '../Shape.js'
-const testimonialText = "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
 
+const userTesimonials = [
+    {
+        id: 1,
+        name: "Adam Smith",
+        city: "Smithsville",
+        img: "./guy3.jpg",
+        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+    },
+    {
+        id: 2,
+        name: "Hans Olo",
+        city: "Spaceville",
+        img: "./guy3.jpg",
+        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+    },
+    {
+        id: 3,
+        name: "Chuck N.",
+        city: "Texas",
+        img: "./guy3.jpg",
+        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+    },
+    {
+        id: 4,
+        name: "John Doe",
+        city: "Forestville",
+        img: "./guy3.jpg",
+        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+    },
+    {
+        id: 5,
+        name: "Jane Doe",
+        city: "Forestville",
+        img: "./guy3.jpg",
+        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+    },
+    {
+        id: 6,
+        name: "Boris Y.",
+        city: "Moscow",
+        img: "./guy3.jpg",
+        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+    }
+]
 
 function Testimonials() {
+
+    const [shownTestimonials, setShownTestimonials] = useState([]);
+    useEffect(()=> {
+        let currentTestimonials = [];
+        for (let i=0; i<userTesimonials.length; i++) {
+            currentTestimonials.push(<TestimonialCard name={userTesimonials[i].name} city={userTesimonials[i].city} imgSrc={userTesimonials[i].img} text={userTesimonials[i].testimonial} key={userTesimonials[i].id} animationDelay={(i+1)*200}/>)
+        }
+        setShownTestimonials(currentTestimonials);   
+    }, []);
+
     return (
         <ScrollAnimation animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
             <section id={styles.testimonialsSection}>
                 <Shape text="Testimonials"/>
                 <div id={styles.testimonials}>
-                    <TestimonialCard name="Adam Smith" city="Smithsville" text={testimonialText} animationDelay={200} imgSrc="./guy3.jpg"/>
-                    <TestimonialCard name="Hans Olo" city="Millenium Falcon" text={testimonialText} animationDelay={400} imgSrc="./guy3.jpg"/>
-                    <TestimonialCard name="Chuck Norris" city="Texas" text={testimonialText} animationDelay={600} imgSrc="./guy3.jpg"/>
+                    {shownTestimonials}
                 </div>
             </section>
         </ScrollAnimation>

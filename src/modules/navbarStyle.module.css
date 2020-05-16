@@ -1,11 +1,13 @@
 .myNavbar {
     overflow: hidden;
     height: 100%;
-    width: 12vw;
+    width: 11vw;
     justify-content: flex-start;
     z-index: 2;
     background-color: var(--secondary-color);
     position: fixed;
+    display: none;
+
 }
 
 #wave {
@@ -21,6 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 
 #links {
@@ -32,9 +35,11 @@
 }
 
 .link {
+    font-family: Raleway, sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .link:hover {
@@ -51,7 +56,26 @@
 }
 
 .logoImg {
-    width: 80%;
+    width: 70%;
 }
 
+#mobileIcon {
+    font-size: 40px;
+    color: black;
+    padding: 20px;
+    display: block;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background-color: var(--showcase-color);
+    z-index: 30;
+}
 
+@media (max-width: 767px) {
+    .myNavbar {
+      display: none;
+    }
+    #mobileIcon {
+        display: block;
+    }
+  }

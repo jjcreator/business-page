@@ -7,7 +7,7 @@ function TestimonialCard(props) {
         <ScrollAnimation animateIn="zoomIn" animateOnce={false} duration={1.2} delay={props.animationDelay} offset={200}>
             <div className={`${styles.testimonialCard} animate__zoomIn animate__delay-${props.animationDelay}s`}>
                 <div className={styles.testimonialTop}>
-                    <img className={styles.testimonialImg} src={props.imgSrc}/> 
+                    <img className={styles.testimonialImg} src={props.imgSrc} alt="user"/> 
                 </div>
                 <div className={styles.testimonialTextBox}>
                     <i className={`fas fa-quote-left ${styles.quote} ${styles.quoteLeft}`}/>
@@ -15,7 +15,7 @@ function TestimonialCard(props) {
                     <i className={`fas fa-quote-right ${styles.quote} ${styles.quoteRight}`}/>        
                 </div>
                 <div className={styles.testimonialFooter}>
-                    <span className={styles.authorName}>{props.name}</span><span className={styles.authorCity}>{props.city}</span>
+                    <span className={styles.authorName}>{props.name}</span>,<span className={styles.authorCity}>{props.city}</span>
                 </div>
                 
             </div>
