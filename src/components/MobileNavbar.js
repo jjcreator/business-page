@@ -1,8 +1,36 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from "../modules/mobileNavbarStyle.module.css"
 import { NavLink } from "react-router-dom"
 
 function MobileNavbar() {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    useEffect(()=> {
+        window.addEventListener("resize", ()=> {
+            setWindowWidth(window.innerWidth)
+        });
+        return () => {
+            window.removeEventListener("resize", ()=> {
+                setWindowWidth(window.innerWidth)
+            });
+        }
+    }, []);
+
+    useEffect(()=> {
+        if (windowWidth > 900) {
+            setIsVisible({
+                hamburger: {
+                    display: "block",
+                },
+                menu : {
+                    display: "none",
+                    animation: "none"
+                }
+            })
+        }
+
+    },[windowWidth])
 
     const [isVisible, setIsVisible] = useState({
         hamburger: {
@@ -32,6 +60,7 @@ function MobileNavbar() {
                 display: "block"
             },
             menu: {
+                display: "none",
                 animation: "none"
             }
         })
@@ -42,21 +71,8 @@ function MobileNavbar() {
             <i id={styles.mobileIcon} className="fas fa-bars" style={isVisible.hamburger} onClick={toggleMobileMenu}/>
             <div 
                 id={styles.mobileNavbarBody}
-                style={isVisible.menu}
-                onAnimationEnd={()=> {
-                    if (isVisible.menu.display === "block") { 
-                        setIsVisible({
-                            ...isVisible, 
-                            menu: {
-                                display: "none"
-                            }
-                        }
-                        );}
-                    }
-                }>
-                    
-                <i id={styles.mobileExitIcon} onClick={()=>setIsVisible({...isVisible, hamburger: {
-                    display: "block"}, menu: {animation: "slideOutLeft forwards 0.5s ease-in"}})} className="fas fa-times"/>
+                style={isVisible.menu}>
+                <i id={styles.mobileExitIcon} onClick={toggleMobileMenu} className="fas fa-times"/>
                 <NavLink exact to="/" onClick={toggleMobileMenu}>Home</NavLink>
                 <NavLink to="/about" onClick={toggleMobileMenu}>About</NavLink>
                 <NavLink to="/contact" onClick={toggleMobileMenu}>Contact</NavLink>
