@@ -1,31 +1,67 @@
-#mobileNavbar {
+.mobileNavigation {
+    display: none;
+}
+
+#mobileNavbarBody {
     background-color: var(--secondary-color);
-    opacity: 0.8;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 30%;
     height: 100%;
     z-index: 40;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
 }
 
-#mobileNavbar a {
-    color: white;
+#mobileNavbarBody a {
+    color: var(--showcase-color);
     font-family: Raleway;
     text-transform: uppercase;
     font-size: 30px;
-    padding: 50px 0px;
+    margin:50px 0px;
+    user-select: none;
 }
 
+#mobileNavbarBody a:hover {
+    text-decoration: none;
+}
 
 #mobileIcon {
-    color: black;
-    font-size: 50px;
+    color: var(--showcase-color);
+    font-size: 30px;
     position: fixed;
-    top: 2%;
-    left: 2%
+    top: 0;
+    left: 0;
+    z-index: 30;
+    background-color: var(--primary-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mobileExitIcon {
+    color: var(--showcase-color);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@keyframes animated {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mobileNavigation {
+        display: block;
+    }
 }

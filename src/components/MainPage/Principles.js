@@ -18,7 +18,7 @@ function Principles() {
     const createItems = () => {
         let items = [];
         for (let i=1; i<7; i++) {
-            items.push(<ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={i * 250} offset={50}>
+            items.push(<ScrollAnimation className={styles.listItem} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={i * 250} offset={50} key={i}>
                 <i className={`fas fa-landmark ${styles.icon}`}></i>Lorem ipsum dolor sit amet
             </ScrollAnimation>);
         setListItems(items)

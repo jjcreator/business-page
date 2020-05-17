@@ -5,15 +5,13 @@ import './App.css';
 import Main from './components/MainPage/Main';
 import About from './components/AboutPage/About';
 import Contact from './components/ContactPage/Contact';
-import MobileNavbar from './components/AboutPage/MobileNavbar';
+import MobileNavbar from './components/MobileNavbar';
 
 const imageSources = ["/phone.jpg","/city.jpg", "/email.jpg", "/man-in-black-holding-phone-618613.jpg", "/people.jpg", "/phone.jpg", "/team.jpg"];
-
 const images = []
 
 function App() {
 
-  
   useEffect(()=> {
     imageSources.forEach((srcText, index) => {
       images[index] = new Image();
@@ -39,7 +37,6 @@ function App() {
               </Route>
             </Switch>
         </div>
-          
       </div>
     </Router>
   );
