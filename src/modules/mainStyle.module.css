@@ -7,32 +7,29 @@
     width: 100%;
     height: 100vh;
     color: var(--showcase-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Roboto, sans-serif;
     position: relative;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
 }
 
 #showcase::before {
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
     background-color: rgba(3, 3, 78, 0.493);
+    width: 100%;
+    height: 100%;
 }
 
 #showcaseTitle {
-    padding-top: 50px;
-    font-size: 35px;
+    padding: 60px;
+    width: 80%;
+    font-size: 45px;
     font-family: Raleway;
     letter-spacing: 7px;
     text-shadow: 1px 1px 3px black;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .animated {
@@ -52,11 +49,10 @@ animation: pop 0.4s forwards ease-in;
 }
 
 #showcaseBody {
-    flex: 1;
     display: flex;
-    padding: 20px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 #showcaseDescription {
@@ -65,25 +61,25 @@ animation: pop 0.4s forwards ease-in;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 50%;
     width: 40%;
     border: 3px solid #F9DC5C;
     border-left: none;
     margin-left: 0%;
     overflow: hidden;
+    padding: 10px;
 }
 
-#showcaseDescription h2 {
-    margin-top: 2%;
-    font-weight: bold;
-    letter-spacing: 15%;
-}
-
-#showcaseDescription p {
-    padding: 25px 15px 15px 15px;
+.paragraph {
+    padding: 10px;
     line-height: 2;
-    text-justify: inter-word;
-    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+.paragraphHeader {
+    font-size: 22px;
+    padding: 10px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
 }
 
 #showcaseButton {
@@ -105,14 +101,9 @@ animation: pop 0.4s forwards ease-in;
 }
 
 #teamImg {
-    width: 50%;
-    height: 65%;
-    background-image: url(/people.jpg);
-    background-position: center;
-    background-size: cover;
+    width: 45%;
     z-index: 2;
     box-shadow: -4px 4px 10px black;
-    overflow: hidden;
 }
 
 #showcase h1, #showcase h2 {
@@ -126,10 +117,10 @@ animation: pop 0.4s forwards ease-in;
     position: absolute;
     bottom: 3%;
     color: var(--showcase-color);
-    font-size: 25px;
+    font-size: 20px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    padding: 25px;
+    padding: 10px;
     cursor: pointer;
     height: 5vh;
     width: 5vh;
@@ -144,13 +135,42 @@ animation: pop 0.4s forwards ease-in;
 @keyframes flashing {
     0% {
         color:var(--showcase-color);
-        height: 25px;
+        
     }
     100% {
         color: transparent;
-        height: 50px;
+        
     }
 }
+
+/* Mission statement */
+
+#mission {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+#missionRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#missionRow p {
+    border: 3px solid var(--primary-color);
+    border-right: none;
+    width: 40%;
+    padding: 25px;
+    margin: 0;
+}
+
+#missionImg {
+    width: 40%;
+    box-shadow: var(--box-shadow);
+}
+
+/* Services */
 
 .principles {
     display: flex;
@@ -193,53 +213,6 @@ animation: pop 0.4s forwards ease-in;
     font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.ourMission {
-    margin-top: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-#missionStatement {
-    margin-top: 25px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    
-}
-
-#missionStatement p {
-    font-size: 20px;
-    line-height: 2;
-    border: 3px solid var(--primary-color);
-    border-right: none;
-    padding: 30px;
-    width: 55%;
-    margin: 0;
-}
-
-#missionStatement p span {
-    text-transform: uppercase;
-    color: #ED254E;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 1;
-    padding-right: 5px;
-}
-
-#missionImg {
-    background-image: url(/man-in-black-holding-phone-618613.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 45%;
-    box-shadow: var(--box-shadow)
 }
 
 .roundedLine {
@@ -427,16 +400,105 @@ animation: pop 0.4s forwards ease-in;
     background-color: rgb(3, 3, 78);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+
+    #showcaseDesciption {
+        width: 50%;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+    #showcaseDescription h2 {
+        font-size: 20px;
+    }
+    #showcaseButton {
+        padding: 16px;
+        font-size: 18px;
+    }
+    #teamImg {
+        width: 50%;
+    }
+    #missionImg {
+        width: 45%;
+    }
 
 }
 
-@media (max-width: 900px) {
-    #showcaseBody {
-        flex: 1;
-        display: flex;
+@media (max-width: 1100px) {
+    
+    #showcaseDescription {
+        border-left: 3px solid var(--tertiary-color);
+        width: 70%;
         padding: 10px;
-        justify-content: center;
-        align-items: center;
+    }
+
+    #showcaseDescription h2 {
+        font-size: 25px;
+        font-family: Raleway, sans-serif;
+    }
+
+    #showcaseDescription p {
+        font-size: 16px;
+        padding: 20px
+    }
+    #teamImg {
+        display: none;
+    }
+    #doubleArrow {
+        right: 2%;
+    }
+    #showcaseButton {
+        padding: 20px;
+        font-size: 20px;
+    }
+    #mission {
+        margin-top: 4vh;
+    }
+
+    #missionRow {
+        flex-direction: column-reverse;
+        width: 50%;
+    }
+    
+    #missionRow p {
+        width: 100%;
+        padding: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+        border: 3px solid var(--primary-color);
+        border-top: none;
+    }
+
+    #missionRow span {
+        font-size: 20px;
+    }
+
+    #missionImg {
+        width: 100%;
+        border: 3px solid var(--primary-color);
+        border-bottom: none;
+        bordeR: none;
+        box-shadow: none;
+    }
+    .roundedLine {
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #showcaseTitle {
+        font-size: 35px;
+    }
+    #showcaseDescription {
+        border-left: 3px solid var(--tertiary-color);
+        width: 60%;
+        padding: 10px;
+    }
+    #showcaseDescription p {
+        font-size: 15px;
+    }
+    #showcaseButton {
+        padding: 15px;
+        font-size: 15px;
     }
 }

@@ -50,7 +50,6 @@ function MobileNavbar() {
                 },
                 menu : {
                     display: "flex",
-                    animation: `${styles.animated} 1s ease-in`,
                     animation: "slideInLeft 0.5s"
                 }
             });

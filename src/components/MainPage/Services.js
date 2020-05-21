@@ -7,7 +7,7 @@ const chosenAnimation = "fadeInUp"
 const duration = 1.2;
 
 
-function Principles() {
+function Services() {
 
     const [listItems, setListItems] = useState([]);
 
@@ -28,7 +28,7 @@ function Principles() {
     return (
         <ScrollAnimation animateIn={styles.animated} animateOnce={false} duration={0.5}>
             <section className={styles.principles}>
-                    <Shape text="Our core principles"/>
+                    <Shape text="Services"/>
                     <div id={styles.list}>
                         {listItems}
                     </div>
@@ -38,4 +38,4 @@ function Principles() {
     )
 }
 
-export default Principles
+export default Services

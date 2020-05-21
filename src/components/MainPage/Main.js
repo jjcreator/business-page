@@ -1,6 +1,6 @@
 import React from 'react'
 import Showcase from "./Showcase.js"
-import Principles from "./Principles.js"
+import Services from "./Services.js"
 import MissionStatement from './MissionStatement'
 import CallToAction from "./CallToAction"
 import Testimonials from './Testimonials.js'
@@ -11,7 +11,7 @@ function Main() {
         <div>
             <Showcase/>
             <MissionStatement/>
-            <Principles/>
+            <Services/>
             <Testimonials/>
             <CallToAction/>
         </div>

@@ -20,8 +20,8 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="mainContainer">
+    <div className="mainContainer">
+      <Router>
         <MobileNavbar/>
         <Navbar/>
         <div className="pageContainer">
@@ -37,8 +37,9 @@ function App() {
               </Route>
             </Switch>
         </div>
+        </Router>
       </div>
-    </Router>
+    
   );
 }
 
