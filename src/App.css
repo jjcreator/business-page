@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Playfair+Display&display=swap');
 
-.mainContainer {
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-
 .pageContainer {
-  flex: 1;
+  
   background: #edf3f2;
   background: linear-gradient(107deg, rgba(237,243,242,1) 20%, rgba(255,255,255,1) 50%, rgba(237,243,242,1) 80%);
   margin-left: 11vw;
   z-index: 20;
+  width: 89vw;
 }
 
 .generalContainer {

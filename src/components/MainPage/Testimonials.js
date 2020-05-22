@@ -63,10 +63,12 @@ function Testimonials() {
     return (
         <ScrollAnimation animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
             <section id={styles.testimonialsSection}>
-                <Shape text="Testimonials"/>
-                <div id={styles.testimonials}>
-                    {shownTestimonials}
-                </div>
+                <div className="generalContainer flexColumn">
+                    <Shape text="Testimonials"/>
+                    <div id={styles.testimonials}>
+                        {shownTestimonials}
+                    </div>
+                </div>   
             </section>
         </ScrollAnimation>
     )

@@ -61,7 +61,7 @@ animation: pop 0.4s forwards ease-in;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 35%;
     border: 3px solid #F9DC5C;
     border-left: none;
     margin-left: 0%;
@@ -483,15 +483,21 @@ animation: pop 0.4s forwards ease-in;
     .roundedLine {
         margin-top: 5vh;
     }
+    #testimonials {
+        grid-template: 1fr/1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 650px) {
+
     #showcaseTitle {
-        font-size: 35px;
+        font-size: 30px;
+        width: 100%;
+        padding: 20px;
     }
     #showcaseDescription {
         border-left: 3px solid var(--tertiary-color);
-        width: 60%;
+        width: 90%;
         padding: 10px;
     }
     #showcaseDescription p {
@@ -500,5 +506,23 @@ animation: pop 0.4s forwards ease-in;
     #showcaseButton {
         padding: 15px;
         font-size: 15px;
+    }
+    #list {
+        grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    }
+
+    #missionRow {
+        width: 80%;
+    }
+    #principles {
+        width: 100%;
+
+    }
+
+    .listItem {
+        font-size: 20px;
+    }
+    #testimonials {
+        grid-template: 1fr/1fr;
     }
 }
