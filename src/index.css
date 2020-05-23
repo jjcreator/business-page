@@ -1,3 +1,10 @@
+html {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --box-shadow: 2px 2px 5px rgb(0, 0, 0);
   --showcase-color: rgb(255, 255, 255);
@@ -20,9 +27,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
   margin: 0;
   padding: 0;
+  width: 100vw;
 }
 
 code {
