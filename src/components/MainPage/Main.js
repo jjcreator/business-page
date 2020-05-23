@@ -8,13 +8,13 @@ import Testimonials from './Testimonials.js'
 function Main() {
    
     return (
-        <div>
+        <>
             <Showcase/>
             <MissionStatement/>
             <Services/>
             <Testimonials/>
             <CallToAction/>
-        </div>
+        </>
     )
 }
 

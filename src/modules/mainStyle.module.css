@@ -1,3 +1,4 @@
+
 /* Showcase styles */
 
 #showcase {
@@ -30,6 +31,7 @@
     text-shadow: 1px 1px 3px black;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 300;
 }
 
 .animated {
@@ -252,7 +254,7 @@ animation: pop 0.4s forwards ease-in;
 }
 
 .testimonialCard {
-    width: 80%;
+    width: 60%;
     margin-bottom: 10%;
     height: 400px;
     display: flex;

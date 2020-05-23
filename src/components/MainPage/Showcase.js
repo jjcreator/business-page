@@ -8,8 +8,7 @@ function Showcase() {
     }
     
     return (
-        <section id={styles.showcase}>
-        <div className="generalContainer flexColumn">
+        <section id={styles.showcase} className="flexColumn">
             <h1 className={styles.animated} id={styles.showcaseTitle}>Fake law on your side</h1>
             <div className={styles.animated} id={styles.showcaseBody}>
                 <img id={styles.teamImg} src="./people.jpg" alt="the team"/>
@@ -22,7 +21,6 @@ function Showcase() {
             <div id={styles.doubleArrow} onClick={scrollDown}>
                 <i className="fas fa-angle-double-down"></i>
             </div>
-        </div>
         </section>
     )
 }

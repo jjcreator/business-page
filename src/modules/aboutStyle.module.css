@@ -34,20 +34,19 @@
     background-image: url(/team.jpg);
     background-position: center;
     background-size: cover;
-    width: 60%;
-    height: 100%;
+    width: 30%;
+    height: 80%;
     box-shadow: 2px 2px 5px black;
 }
 
 #aboutText {
-    width: 48%;
+    width: 40%;
     padding: 10px;
     font-size: 20px;
     line-height: 2;
     border: 3px solid #011936;
     border-right: none;
     padding: 30px;
-    width: 55%;
 }
 
 #aboutText span {
