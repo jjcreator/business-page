@@ -1,6 +1,6 @@
 .myNavbar {
     height: 100%;
-    width: 11vw;
+    width: 11%;
     justify-content: flex-start;
     z-index: 2;
     background-color: var(--secondary-color);

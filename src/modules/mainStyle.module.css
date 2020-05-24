@@ -1,5 +1,5 @@
 
-/* Showcase styles */
+/* -------------------------Showcase styles------------------------- */
 
 #showcase {
     background-image: url(/city.jpg);
@@ -55,6 +55,7 @@ animation: pop 0.4s forwards ease-in;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
+    padding: 20px;
 }
 
 #showcaseDescription {
@@ -75,6 +76,7 @@ animation: pop 0.4s forwards ease-in;
     padding: 10px;
     line-height: 2;
     font-family: Roboto, sans-serif;
+    font-size: 15px;
 }
 
 .paragraphHeader {
@@ -145,11 +147,12 @@ animation: pop 0.4s forwards ease-in;
     }
 }
 
-/* Mission statement */
+/* -------------------------Mission statement------------------------- */
 
 #mission {
     margin-top: 5vh;
     width: 100%;
+    padding: 20px;
 }
 
 #missionRow {
@@ -172,19 +175,21 @@ animation: pop 0.4s forwards ease-in;
     box-shadow: var(--box-shadow);
 }
 
-/* Services */
+/* -------------------------Services------------------------- */
 
-.principles {
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     margin-top: 15vh;
+    background-color: var(--secondary-color);
+    color: var(--showcase-color);
+    width: 100%;
 }
 
 #list {
-    padding: 40px;
     list-style-type: none;
     font-size: 20px;
     display: grid;
@@ -193,13 +198,14 @@ animation: pop 0.4s forwards ease-in;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 2%
+    margin-top: 10%;
+    padding: 20px;
 }
 
 .listItem {
     text-align: center;
     font-size: 22px;
-    justify-self: start;
+    justify-self: center;
     min-width: 33%;
 }
 
@@ -217,10 +223,12 @@ animation: pop 0.4s forwards ease-in;
     font-weight: bold;
 }
 
+/*-------------------------Horizontal Line-------------------------  */
+
 .roundedLine {
     border-top: 5px solid var(--secondary-color);
     border-radius: 5px;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .expand {
@@ -232,9 +240,11 @@ animation: pop 0.4s forwards ease-in;
         width: 0px
     }
     100% {
-        width: 30%;
+        width: 26%;
     }
 }
+
+/* -------------------------Testimonial cards------------------------- */
 
 #testimonialsSection {
     display: flex;
@@ -254,7 +264,7 @@ animation: pop 0.4s forwards ease-in;
 }
 
 .testimonialCard {
-    width: 60%;
+    width: 80%;
     margin-bottom: 10%;
     height: 400px;
     display: flex;
@@ -269,24 +279,41 @@ animation: pop 0.4s forwards ease-in;
 }
 
 .testimonialTop {
-    background-color: var(--secondary-color);
     width: 100%;
-    flex-basis: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--showcase-color);
+    font-size: 16px;
     position: relative;
+    height: 30%;
+}
+
+.testimonialTopText {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.authorCity {
+    padding: 0 5px;
+}
+
+.authorName {
+    font-weight: bolder;
 }
 
 .testimonialImg {
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    position: absolute;
-    bottom: -60px;
+    flex-basis: 30%;
+    width: 30%; 
     margin: 0 auto;
     z-index: 3;
     border: 5px solid var(--showcase-color);
-    box-shadow: 0px 0px 5px black;
+    margin-left: auto;
 }
 
 .quote {
@@ -303,7 +330,7 @@ animation: pop 0.4s forwards ease-in;
 }
 
 .testimonialTextBox {
-    flex-basis: 60%;
+    height: 70%;
     width: 100%;
     padding: 15px;
     position: relative;
@@ -320,37 +347,7 @@ animation: pop 0.4s forwards ease-in;
     margin: 0 35px;
 }
 
-.testimonialFooter {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-basis: 20%;
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--showcase-color);
-}
-
-.authorCity {
-    padding: 0 5px;
-}
-
-.authorName {
-    font-weight: bolder;
-}
-
-#arrowContainer {
-    display: flex;
-    width: 10%;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow {
-    font-size: 40px;
-    color: var(--primary-color);
-    cursor: pointer;
-    margin: 10%;
-}
+/* -------------------------Call to action------------------------- */
 
 #callToAction {
     background-image: url(/phone.jpg);
@@ -401,6 +398,8 @@ animation: pop 0.4s forwards ease-in;
 #contact:hover {
     background-color: rgb(3, 3, 78);
 }
+
+/* ------------------------- Media Queries ------------------------- */
 
 @media (max-width: 1300px) {
 

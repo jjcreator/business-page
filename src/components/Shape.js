@@ -2,18 +2,21 @@ import React from 'react'
 
 function Shape(props) {
     const shapeStyle = {
-        backgroundColor: "var(--primary-color)",
+        backgroundColor: props.color || "var(--primary-color)",
         transform: "skew(-20deg)",
-        width: "26vw",
+        width: "30%",
         minWidth: "fit-content",
-        padding: "15px"
+        padding: "1.2% 3%"
     }
 
     const textStyle = {
         textAlign: "center",
-        fontSize: "40px",
-        color: "white",
-        transform: "skew(20deg)"
+        fontSize: "3.5rem",
+        color: props.textColor || "var(--showcase-color)",
+        transform: "skew(20deg)",
+        margin: 0,
+        padding: 0,
+        fontWeight: "500"
     }
     
     return (

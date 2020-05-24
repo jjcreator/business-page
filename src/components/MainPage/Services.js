@@ -27,14 +27,12 @@ function Services() {
 
     return (
         <ScrollAnimation animateIn={styles.animated} animateOnce={false} duration={0.5}>
-            <section className={styles.principles}>
-                <div className="generalContainer flexColumn">
-                        <Shape text="Services"/>
-                        <div id={styles.list}>
-                            {listItems}
-                        </div>
-                        <ExpandingLine animationDuration={0.5} animationDelay={1750}/>
-                </div>     
+            <section className={styles.services}>
+                <Shape textColor="var(--showcase-color)" color="var(--attention-color)" text="Services"/>
+                <div id={styles.list}>
+                    {listItems}
+                </div>
+                <ExpandingLine color="var(--showcase-color)" animationDuration={0.5} animationDelay={1750}/>
             </section>
         </ScrollAnimation>
     )

@@ -68,9 +68,7 @@ function MobileNavbar() {
     return (
         <div className={styles.mobileNavigation}>
             <i id={styles.mobileIcon} className="fas fa-bars" style={isVisible.hamburger} onClick={toggleMobileMenu}/>
-            <div 
-                id={styles.mobileNavbarBody}
-                style={isVisible.menu}>
+            <div id={styles.mobileNavbarBody} style={isVisible.menu}>
                 <i id={styles.mobileExitIcon} onClick={toggleMobileMenu} className="fas fa-times"/>
                 <NavLink exact to="/" onClick={toggleMobileMenu}>Home</NavLink>
                 <NavLink to="/about" onClick={toggleMobileMenu}>About</NavLink>

@@ -1,10 +1,3 @@
-html {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --box-shadow: 2px 2px 5px rgb(0, 0, 0);
   --showcase-color: rgb(255, 255, 255);
@@ -13,6 +6,7 @@ html {
   --tertiary-color: #f9dc5c;
   --attention-color: #ee254e;
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 * {
@@ -29,10 +23,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  width: 100vw;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 8px;
+  }
 }
