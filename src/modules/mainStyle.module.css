@@ -91,7 +91,7 @@ animation: pop 0.4s forwards ease-in;
     margin-bottom: 4%;
     padding: 20px;
     font-size: 20px;
-    background-color: #ED254E;
+    background-color: var(--attention-color);
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
@@ -182,7 +182,7 @@ animation: pop 0.4s forwards ease-in;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 100px;
     margin-top: 15vh;
     background-color: var(--secondary-color);
     color: var(--showcase-color);
@@ -252,7 +252,7 @@ animation: pop 0.4s forwards ease-in;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0 100px;
     width: 100%;
 }
 
@@ -264,16 +264,14 @@ animation: pop 0.4s forwards ease-in;
 }
 
 .testimonialCard {
-    width: 80%;
-    margin-bottom: 10%;
-    height: 400px;
+    width: 90%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--primary-color);
     box-shadow: 2px 2px 5px black;
     position: relative;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: var(--showcase-color);
     margin: 0 auto 10% auto;
 }
@@ -287,33 +285,26 @@ animation: pop 0.4s forwards ease-in;
     color: var(--showcase-color);
     font-size: 16px;
     position: relative;
-    height: 30%;
+    height: 40%;
 }
 
 .testimonialTopText {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: auto;
-}
-
-.authorCity {
-    padding: 0 5px;
+    padding: 0 0 0 20px;
+    width: 75%;
 }
 
 .authorName {
     font-weight: bolder;
+    
 }
 
 .testimonialImg {
     border-radius: 50%;
-    flex-basis: 30%;
-    width: 30%; 
-    margin: 0 auto;
+    width: 25%; 
     z-index: 3;
-    border: 5px solid var(--showcase-color);
-    margin-left: auto;
+    border: 3px solid var(--showcase-color);
+    margin-left: 7%;
 }
 
 .quote {
@@ -340,7 +331,6 @@ animation: pop 0.4s forwards ease-in;
     flex-direction: column;
     font-size: 16px;
     color: var(--primary-color);
-    margin-top: 5%;
 }
 
 .testimonialTextBox p {
@@ -350,53 +340,63 @@ animation: pop 0.4s forwards ease-in;
 /* -------------------------Call to action------------------------- */
 
 #callToAction {
-    background-image: url(/phone.jpg);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 100px auto;
+    margin-top: 100px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 60%;
     background-color: white;
-    box-shadow: 2px 2px 5px black;
-    padding: 50px;
+    background: rgb(255,255,255);
+background: linear-gradient(63deg, rgba(255,255,255,1) 0%, rgba(106,120,137,0.5) 100%, rgba(255,255,255,1) 100%);
+background: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    color: var(--showcase-color);
+    margin: 8vh auto;
 }
 
 #callToAction p {
     line-height: 2;
-    font-weight: bold;
     z-index: 2;
     text-transform: uppercase;
     text-align: center;
-    font-size: 22px;
-
+    font-size: 18px;
+    font-family: Raleway;
+    padding: 10px;
 }
 
 #callToAction span {
     color: red;
+    font-weight: 600;
+}
+
+#ctaImg {
+    width: 20%
 }
 
 #contact {
     background-color: rgba(3, 3, 78, 0.493);
+    background-color: var(--attention-color);
+    border-radius: 10px;
     padding: 20px;
     cursor: pointer;
     color: white;
     z-index: 2;
     font-size: 20px;
     font-weight: bold;
-    margin: 0 5%;
-    width: 30%;
-    transition: 0.10s ease-in;
+    margin: 0 3%;
+    min-width: fit-content;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s ease-in;
 }
 
 #contact:hover {
-    background-color: rgb(3, 3, 78);
+    background-color: rgb(190, 29, 61);
+    transform: translateY(5%);
+    transition: 0.2s ease-in;
 }
 
 /* ------------------------- Media Queries ------------------------- */
@@ -421,6 +421,12 @@ animation: pop 0.4s forwards ease-in;
     }
     #missionImg {
         width: 45%;
+    }
+    #testimonialsSection {
+        padding: 20px;
+    }
+    #callToAction {
+        width: 70%
     }
 
 }
@@ -487,6 +493,16 @@ animation: pop 0.4s forwards ease-in;
     #testimonials {
         grid-template: 1fr/1fr 1fr;
     }
+    #callToAction {
+        width: 90%;
+    }
+
+    #callToAction p {
+        font-size: 16px;
+    }
+    #contact {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -525,5 +541,16 @@ animation: pop 0.4s forwards ease-in;
     }
     #testimonials {
         grid-template: 1fr/1fr;
+    }
+    #callToAction {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #callToAction p {
+        font-size: 14px;
+    }
+    #contact {
+        font-size: 16px;
     }
 }

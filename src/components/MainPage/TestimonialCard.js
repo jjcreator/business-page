@@ -8,10 +8,10 @@ function TestimonialCard(props) {
             <div className={`${styles.testimonialCard} animate__zoomIn animate__delay-${props.animationDelay}s`}>
                 <div className={styles.testimonialTop}>
                     <img className={styles.testimonialImg} src={props.imgSrc} alt="user"/>
-                    <div className={styles.testimonialTopText}>
-                        <span className={styles.authorName}>{props.name}</span>,
+                    <p className={styles.testimonialTopText}>
+                        <span className={styles.authorName}>{props.name},&nbsp;</span>
                         <span className={styles.authorCity}>{props.city}</span>
-                    </div> 
+                    </p> 
                     
                 </div>
                 <div className={styles.testimonialTextBox}>

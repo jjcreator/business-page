@@ -3,6 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 import TestimonialCard from "./TestimonialCard.js"
 import styles from "../../modules/mainStyle.module.css"
 import Shape from '../Shape.js'
+import ExpandingLine from "../MainPage/ExpandingLine"
 
 const userTesimonials = [
     {
@@ -63,10 +64,11 @@ function Testimonials() {
     return (
         <ScrollAnimation animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
             <section id={styles.testimonialsSection} className="flexColumn">
-                    <Shape text="Testimonials"/>
-                    <div id={styles.testimonials}>
-                        {shownTestimonials}
-                    </div> 
+                <Shape text="Testimonials"/>
+                <div id={styles.testimonials}>
+                    {shownTestimonials}
+                </div>
+                <ExpandingLine animationDuration={0.5} animationDelay={400}/> 
             </section>
         </ScrollAnimation>
     )
