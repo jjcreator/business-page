@@ -345,10 +345,7 @@ animation: pop 0.4s forwards ease-in;
     justify-content: center;
     align-items: center;
     width: 60%;
-    background-color: white;
-    background: rgb(255,255,255);
-background: linear-gradient(63deg, rgba(255,255,255,1) 0%, rgba(106,120,137,0.5) 100%, rgba(255,255,255,1) 100%);
-background: var(--secondary-color);
+    background: var(--secondary-color);
     box-shadow: var(--box-shadow);
     color: var(--showcase-color);
     margin: 8vh auto;
@@ -528,9 +525,19 @@ background: var(--secondary-color);
         grid-template: 1fr 1fr 1fr/ 1fr 1fr;
     }
 
-    #missionRow {
-        width: 80%;
+    #mission {
+        margin-top: 0;
     }
+
+    #missionRow {
+        margin-top: 2vh;
+        width: 95%;
+        
+    }
+
+    
+
+
     #principles {
         width: 100%;
 

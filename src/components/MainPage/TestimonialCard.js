@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 function TestimonialCard(props) {
     return (
         <ScrollAnimation animateIn="zoomIn" animateOnce={false} duration={1.2} delay={props.animationDelay} offset={200}>
-            <div className={`${styles.testimonialCard} animate__zoomIn animate__delay-${props.animationDelay}s`}>
+            <div className={`${styles.testimonialCard}`}>
                 <div className={styles.testimonialTop}>
                     <img className={styles.testimonialImg} src={props.imgSrc} alt="user"/>
                     <p className={styles.testimonialTopText}>

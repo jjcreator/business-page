@@ -53,14 +53,19 @@ function Form() {
     }
 
     return (
-        <form className={styles.contactCard} id={styles.form} onSubmit={handleSubmit}>
-                <input placeholder="Your first name" type="text" name="firstName" value={messageData.firstName} onChange={handleFormInputChange}/>
-                <input placeholder="Your last name" type="text" name="lastName" value={messageData.lastName} onChange={handleFormInputChange}/>
+        <div className={styles.flexWrapper}>
+        <h2 className={styles.contactHeader}>Message us</h2>
+        <form id={styles.form} onSubmit={handleSubmit}>
+                <div id={styles.nameGroup}>
+                    <input className={styles.name} placeholder="Your first name" type="text" name="firstName" value={messageData.firstName} onChange={handleFormInputChange}/>
+                    <input className={styles.name} placeholder="Your last name" type="text" name="lastName" value={messageData.lastName} onChange={handleFormInputChange}/>
+                </div>
                 <input placeholder="Your email" type="email" name="email" value={messageData.email} onChange={handleFormInputChange}/>
                 <input type="text" placeholder="Subject" name="title" value={messageData.title} onChange={handleFormInputChange}/>
-                <textarea placeholder="Message" name="message" value={messageData.message} onChange={handleFormInputChange}></textarea>
+                <textarea placeholder="Type in your message here" name="message" value={messageData.message} onChange={handleFormInputChange}></textarea>
                 <input type="submit" value="Send"/>
         </form>
+        </div>
     )
 }
 

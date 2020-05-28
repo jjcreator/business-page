@@ -65,4 +65,16 @@
     .mobileNavigation {
         display: block;
     }
+    #mobileNavbarBody a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #mobileNavbarBody {
+        width: 40%;
+    }
+    #mobileNavbarBody a {
+        font-size: 20px;
+    }
 }

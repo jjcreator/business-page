@@ -1,3 +1,5 @@
+/* ------------------------ Main contact page rules ------------------------  */
+
 #contact {
     display: flex;
     justify-content: flex-start;
@@ -20,27 +22,60 @@
     padding: 10px;
 }
 
-.contactCard {
+.contactHeader {
+    color: var(--showcase-color);
+    font-size: 25px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2%;
+}
+
+/* ------------------------ Contact form ------------------------  */
+
+.flexWrapper {
+    width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    height: 100%;
-    padding: 30px;
     box-shadow: var(--box-shadow);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.075);
+    position: relative;
+    transition: 0.65s ease-in;
 }
 
 #form input {
     width: 80%;
     padding: 10px;
     margin: 10px;
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+    outline-width: thin;
+    outline-color: var(--attention-color);
+}
+
+#form input:focus, textarea:focus {
+    outline-style: solid;
+    outline-width: medium;
+    outline-color: var(--secondary-color);   
 }
 
 #form input[type="submit"] {
-    width: 50%;
+    width: 40%;
     background-color: var(--attention-color);
     color: white;
     font-weight: bold;
@@ -48,6 +83,25 @@
     border-radius: 10px;
     border: none;
     box-shadow: var(--box-shadow);
+    font-family: Roboto, sans-serif;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+#nameGroup {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nameGroup input {
+    width: 49%;
+    margin: 0;
+}
+
+#form input[type="submit"]:hover {
+    transform: translateY(2%);
+    background-color: rgb(190, 29, 61);
 }
 
 #form textarea {
@@ -55,79 +109,47 @@
     height: 40%;
     padding: 10px;
     margin: 10px;
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+    resize: none;
 }
 
-#traditionalContact {
-    color: #011936;
-    height: 60%;
-    position: relative;
-}
+/* ------------------------ Contact card ------------------------  */
 
-#traditionalContact h2 {
-    color: white;
-    background-color: var(--primary-color);
-    padding: 10px;
-    margin-bottom: auto;
-    width: 50%;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    position: absolute;
-    top: -10%;
-}
-
-#twoColumn {
+#contactCard {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    margin-top: 2%;
-}
-
-.column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 100%;
-    border: 1px solid grey;
-    background-color: white;
-    width: 50%;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
-.column:first-child {
-    margin-right: 2%;
-}
-
-.column h3 {
-    padding: 10px;
-}
-
-.column ul {
+#contactCard ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    flex: 1;
-    padding: 10px;
+    padding: 20px;
+    background-color: var(--showcase-color);
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
 }
 
-.column ul li {
+#contactCard ul li {
     padding: 5px 0px;
     width: 100%;
     font-size: 18px;
+    opacity: 1;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
 }
 
-.column ul li i {
+#contactCard ul li i {
     color: #ED254E;
     padding-right: 5px;
-}
-
-.bold {
-    font-weight: bold;
+    opacity: 1;
 }
 
 .animated {
@@ -143,5 +165,85 @@
     100% {
         opacity: 1;
         
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .flexWrapper {
+        width: 45%;
+    }
+    #form {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 750px) {
+    
+    .flexWrapper {
+        width: 100%;
+    }
+
+    #mainContactBox {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        height: 100%;
+        margin-top: 2vh;
+    }
+
+    #form {
+        width: 90%;
+        
+    }
+
+    #form input {
+        font-size: 1.5rem;
+    }
+
+    #form textarea {
+        font-size: 1.5rem;
+        height: 30%;
+    }
+
+    #form input[type="submit"] {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    #contactCard {
+        width: 100%;
+        
+    }
+
+    #contactCard ul {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--secondary-color);
+        color: var(--showcase-color);
+    }
+
+    #contactCard ul li {
+        font-size: 1.2rem;
+        height: 100%;
+        width: 90%;
+        
+    }
+
+    .flexWrapper:first-of-type {
+        flex: 1;
+    }
+
+    .flexWrapper:nth-of-type(2) {
+        flex-direction: row;
+        align-items: flex-end;
+        flex-basis: 20%;
+        margin-top: 2%;
+    }
+    .contactHeader {
+        display: none;
     }
 }
