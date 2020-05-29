@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--box-shadow);
 }
 
 #mobileNavbarBody a {
@@ -40,6 +41,7 @@
     background-color: var(--primary-color);
     padding: 10px;
     cursor: pointer;
+    
 }
 
 #mobileExitIcon {

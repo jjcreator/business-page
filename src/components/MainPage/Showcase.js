@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import styles from "../../modules/mainStyle.module.css"
 
 function Showcase() {
@@ -15,7 +16,7 @@ function Showcase() {
                 <div id={styles.showcaseDescription}>
                     <h2 className={styles.paragraphHeader}>Best fake specialists</h2>
                     <p className={styles.paragraph}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                    <div id={styles.showcaseButton}>Get help now</div>
+                    <Link to="/contact"><div id={styles.showcaseButton}>Get help now</div></Link>
                 </div>
             </div>
             <div id={styles.doubleArrow} onClick={scrollDown}>

@@ -28,6 +28,11 @@
     padding-right: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--showcase-color)
+}
+
 @media screen and (max-width: 1300px) {
   .bigText {
     font-size: 25px;

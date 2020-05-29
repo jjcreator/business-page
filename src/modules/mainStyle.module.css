@@ -96,7 +96,7 @@ animation: pop 0.4s forwards ease-in;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
     transition: 0.1s ease-in;
-    
+
 }
 
 #showcaseButton:hover {
@@ -152,7 +152,7 @@ animation: pop 0.4s forwards ease-in;
 #mission {
     margin-top: 5vh;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 #missionRow {
@@ -189,29 +189,41 @@ animation: pop 0.4s forwards ease-in;
     width: 100%;
 }
 
+.servicesText {
+    margin-top: 5vh;
+    font-size: 16px;
+}
+
 #list {
-    list-style-type: none;
     font-size: 20px;
     display: grid;
     grid-template: 1fr 1fr /1fr 1fr 1fr;
     grid-gap: 50px;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 20px;
 }
 
 .listItem {
     text-align: center;
     font-size: 22px;
-    justify-self: center;
-    min-width: 33%;
+    text-align: start;
+    text-transform: uppercase;
 }
 
 .icon {
     color: #ED254E;
-    padding: 10px;
+    padding: 5px;
+}
+
+.services .roundedLine {
+    margin-top: 2vh;
+}
+
+#more {
+    margin-top: 10vh;
 }
 
 .secondaryHeader {
@@ -296,7 +308,6 @@ animation: pop 0.4s forwards ease-in;
 
 .authorName {
     font-weight: bolder;
-    
 }
 
 .testimonialImg {
@@ -512,7 +523,7 @@ animation: pop 0.4s forwards ease-in;
     #showcaseDescription {
         border-left: 3px solid var(--tertiary-color);
         width: 90%;
-        padding: 10px;
+        padding: 5px;
     }
     #showcaseDescription p {
         font-size: 15px;
@@ -527,17 +538,18 @@ animation: pop 0.4s forwards ease-in;
 
     #mission {
         margin-top: 0;
+        padding-bottom: none;
     }
 
     #missionRow {
         margin-top: 2vh;
         width: 95%;
-        
     }
 
-    
-
-
+    #missionRow p {
+        padding: 10px;
+    }
+   
     #principles {
         width: 100%;
 
