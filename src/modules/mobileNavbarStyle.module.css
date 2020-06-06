@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--box-shadow);
+    box-shadow: inset -5px 0px 10px -8px black;
 }
 
 #mobileNavbarBody a {

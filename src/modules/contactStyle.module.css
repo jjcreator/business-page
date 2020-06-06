@@ -64,14 +64,12 @@
     margin: 10px;
     font-family: Raleway, sans-serif;
     font-size: 15px;
-    outline-width: thin;
-    outline-color: var(--attention-color);
+    border: 0.2px solid rgb(165, 156, 156);
+    box-sizing: border-box;
 }
 
 #form input:focus, textarea:focus {
-    outline-style: solid;
-    outline-width: medium;
-    outline-color: var(--secondary-color);   
+    outline: 2px solid var(--secondary-color)
 }
 
 #form input[type="submit"] {
@@ -92,6 +90,7 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
+    margin-top:5%;
 }
 
 #nameGroup input {

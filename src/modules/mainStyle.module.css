@@ -149,10 +149,11 @@ animation: pop 0.4s forwards ease-in;
 
 /* -------------------------Mission statement------------------------- */
 
-#mission {
+.mission {
     margin-top: 5vh;
     width: 100%;
     padding: 10px;
+    justify-content: center;
 }
 
 #missionRow {
@@ -195,27 +196,32 @@ animation: pop 0.4s forwards ease-in;
 }
 
 #list {
-    font-size: 20px;
     display: grid;
     grid-template: 1fr 1fr /1fr 1fr 1fr;
-    grid-gap: 50px;
-    align-items: start;
+    grid-gap: 30px;
+    align-items: flex-start;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin-top: 5%;
-    padding: 20px;
+    padding:40px;
 }
 
 .listItem {
     text-align: center;
-    font-size: 22px;
+    font-size: 16px;
     text-align: start;
-    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+}
+
+.listItem p {
+    height: 100%;
 }
 
 .icon {
     color: #ED254E;
-    padding: 5px;
+    margin-right: 5px;
+    font-size: 22px;
 }
 
 .services .roundedLine {
@@ -258,13 +264,12 @@ animation: pop 0.4s forwards ease-in;
 
 /* -------------------------Testimonial cards------------------------- */
 
-#testimonialsSection {
+.testimonialsSection {
     display: flex;
-    margin-top: 10vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 100px;
+    padding: 5vh 100px 0 100px;
     width: 100%;
 }
 
@@ -532,13 +537,10 @@ animation: pop 0.4s forwards ease-in;
         padding: 15px;
         font-size: 15px;
     }
-    #list {
-        grid-template: 1fr 1fr 1fr/ 1fr 1fr;
-    }
-
+    
     #mission {
-        margin-top: 0;
         padding-bottom: none;
+        padding-top: 20px;
     }
 
     #missionRow {
@@ -552,11 +554,25 @@ animation: pop 0.4s forwards ease-in;
    
     #principles {
         width: 100%;
-
     }
 
-    .listItem {
-        font-size: 20px;
+    .services {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .servicesText {
+        font-size: 15px;
+    }
+
+    #list {
+        width: 100%;
+        padding: 20px 40px;
+        grid-template: 1fr/ 1fr
+    }
+
+    .listItem p {
+        font-size: 18px;
     }
     #testimonials {
         grid-template: 1fr/1fr;
@@ -572,4 +588,48 @@ animation: pop 0.4s forwards ease-in;
     #contact {
         font-size: 16px;
     }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+    #showcase {
+        justify-content: center;
+    }
+
+    #showcaseBody {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .paragraphHeader {
+        padding: 0;
+    }
+
+    #doubleArrow {
+        padding: 15px;
+    }
+
+    #missionRow {
+        flex-direction: row;
+    }
+
+    #missionRow p {
+        border-top: 3px solid var(--primary-color);
+        width: 80%;
+        margin-top: 5vh;
+    }
+
+    #missionImg {
+        display: none;
+    }
+
+    #list {
+        grid-template: 1fr 1fr/ 1fr 1fr;
+        
+    }
+    .testimonialCard {
+        width: 60%;
+    }
+
 }

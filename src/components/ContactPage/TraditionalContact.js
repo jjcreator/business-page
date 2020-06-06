@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "../../modules/contactStyle.module.css"
-import ScrollAnimation from "react-animate-on-scroll"
 
 
 function TraditionalContact() {

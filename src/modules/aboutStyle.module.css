@@ -125,3 +125,16 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+    #aboutMainPage > :first-child {
+        display: none;
+    }
+
+    #aboutMainPage {
+        justify-content: center;
+    }
+    #waveBottom {
+        display: none;
+    }
+}

@@ -54,7 +54,7 @@ function Form() {
 
     return (
         <div className={styles.flexWrapper}>
-        <h2 className={styles.contactHeader}>Message us</h2>
+        <h2 className={styles.contactHeader}>Contact form</h2>
         <form id={styles.form} onSubmit={handleSubmit}>
                 <div id={styles.nameGroup}>
                     <input className={styles.name} placeholder="Your first name" type="text" name="firstName" value={messageData.firstName} onChange={handleFormInputChange}/>
