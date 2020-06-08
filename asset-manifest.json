@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Business-Page/static/css/main.8a769702.chunk.css",
-    "main.js": "/React-Business-Page/static/js/main.dcd61a2e.chunk.js",
-    "main.js.map": "/React-Business-Page/static/js/main.dcd61a2e.chunk.js.map",
-    "runtime-main.js": "/React-Business-Page/static/js/runtime-main.5673590c.js",
-    "runtime-main.js.map": "/React-Business-Page/static/js/runtime-main.5673590c.js.map",
-    "static/js/2.03d78de1.chunk.js": "/React-Business-Page/static/js/2.03d78de1.chunk.js",
-    "static/js/2.03d78de1.chunk.js.map": "/React-Business-Page/static/js/2.03d78de1.chunk.js.map",
-    "index.html": "/React-Business-Page/index.html",
-    "precache-manifest.6f8e9fa21380dd16bbcfcec38837c62f.js": "/React-Business-Page/precache-manifest.6f8e9fa21380dd16bbcfcec38837c62f.js",
-    "service-worker.js": "/React-Business-Page/service-worker.js",
-    "static/css/main.8a769702.chunk.css.map": "/React-Business-Page/static/css/main.8a769702.chunk.css.map",
-    "static/js/2.03d78de1.chunk.js.LICENSE.txt": "/React-Business-Page/static/js/2.03d78de1.chunk.js.LICENSE.txt"
+    "main.css": "/business_page/static/css/main.8a769702.chunk.css",
+    "main.js": "/business_page/static/js/main.dcd61a2e.chunk.js",
+    "main.js.map": "/business_page/static/js/main.dcd61a2e.chunk.js.map",
+    "runtime-main.js": "/business_page/static/js/runtime-main.0b1de0ce.js",
+    "runtime-main.js.map": "/business_page/static/js/runtime-main.0b1de0ce.js.map",
+    "static/js/2.03d78de1.chunk.js": "/business_page/static/js/2.03d78de1.chunk.js",
+    "static/js/2.03d78de1.chunk.js.map": "/business_page/static/js/2.03d78de1.chunk.js.map",
+    "index.html": "/business_page/index.html",
+    "precache-manifest.58e24106e596d47c5453004f7f7d5331.js": "/business_page/precache-manifest.58e24106e596d47c5453004f7f7d5331.js",
+    "service-worker.js": "/business_page/service-worker.js",
+    "static/css/main.8a769702.chunk.css.map": "/business_page/static/css/main.8a769702.chunk.css.map",
+    "static/js/2.03d78de1.chunk.js.LICENSE.txt": "/business_page/static/js/2.03d78de1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5673590c.js",
+    "static/js/runtime-main.0b1de0ce.js",
     "static/js/2.03d78de1.chunk.js",
     "static/css/main.8a769702.chunk.css",
     "static/js/main.dcd61a2e.chunk.js"
