@@ -4,7 +4,7 @@ import TestimonialCard from "./TestimonialCard.js"
 import styles from "../../modules/mainStyle.module.css"
 import Shape from '../Shape.js'
 import ExpandingLine from "../MainPage/ExpandingLine"
-import userImg from "../../images/guy3.jpg"
+import userImg from "../../images/guy.jpg"
 
 const userTesimonials = [
     {

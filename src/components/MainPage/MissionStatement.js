@@ -3,7 +3,7 @@ import styles from "../../modules/mainStyle.module.css"
 import Shape from "../Shape"
 import ScrollAnimation from "react-animate-on-scroll"
 import ExpandingLine from './ExpandingLine'
-import manWithPhone from "../../images/man-in-black-holding-phone-618613.jpg"
+import manWithPhone from "../../images/man-calling.jpg"
 
 function MissionStatement() {
     return (

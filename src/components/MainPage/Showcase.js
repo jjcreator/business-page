@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import styles from "../../modules/mainStyle.module.css"
-import people from "../../images/people.jpg"
+import team from "../../images/team.jpg"
 
 function Showcase() {
 
@@ -13,7 +13,7 @@ function Showcase() {
         <section id={styles.showcase} className="flexColumn">
             <h1 className={styles.animated} id={styles.showcaseTitle}>Fake law on your side</h1>
             <div className={styles.animated} id={styles.showcaseBody}>
-                <img id={styles.teamImg} src={people} alt="the team"/>
+                <img id={styles.teamImg} src={team} alt="the team"/>
                 <div id={styles.showcaseDescription}>
                     <h2 className={styles.paragraphHeader}>Best fake specialists</h2>
                     <p className={styles.paragraph}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>

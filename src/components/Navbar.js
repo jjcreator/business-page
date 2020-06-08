@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from "react-router-dom"
 import { HashLink as Link } from "react-router-hash-link"
 import styles from "../modules/navbarStyle.module.css"
-import logo from "../images/logo7.png"
+import logo from "../images/logo.png"
 
 function Navbar() {
     const [displayHomeMenu, setDisplayHomeMenu] = useState("none");
