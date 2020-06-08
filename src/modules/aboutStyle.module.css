@@ -127,12 +127,10 @@
 }
 
 @media screen and (max-width: 650px) and (orientation: landscape) {
-    #aboutMainPage > :first-child {
-        display: none;
-    }
 
     #aboutMainPage {
         justify-content: center;
+        padding: 0;
     }
     #waveBottom {
         display: none;

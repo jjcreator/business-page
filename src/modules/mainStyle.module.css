@@ -1,4 +1,3 @@
-
 /* -------------------------Showcase styles------------------------- */
 
 #showcase {
@@ -435,7 +434,7 @@ animation: pop 0.4s forwards ease-in;
     #missionImg {
         width: 45%;
     }
-    #testimonialsSection {
+    .testimonialsSection {
         padding: 20px;
     }
     #callToAction {
@@ -513,7 +512,7 @@ animation: pop 0.4s forwards ease-in;
     #callToAction p {
         font-size: 16px;
     }
-    #contact {
+    .contact {
         font-size: 16px;
     }
 }
@@ -538,7 +537,7 @@ animation: pop 0.4s forwards ease-in;
         font-size: 15px;
     }
     
-    #mission {
+    .mission {
         padding-bottom: none;
         padding-top: 20px;
     }
@@ -580,13 +579,20 @@ animation: pop 0.4s forwards ease-in;
     #callToAction {
         width: 100%;
         margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    #ctaImg {
+        display: none;
     }
 
     #callToAction p {
         font-size: 14px;
+        padding: 5px;
     }
     #contact {
-        font-size: 16px;
+        font-size: 15px;
+        margin-bottom: 3%;
     }
 }
 

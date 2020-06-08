@@ -1,4 +1,4 @@
-/* ------------------------ Main contact page rules ------------------------  */
+/* ------------------------ Main contact page ------------------------  */
 
 #contact {
     display: flex;
@@ -61,7 +61,7 @@
 #form input {
     width: 80%;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
     font-family: Raleway, sans-serif;
     font-size: 15px;
     border: 0.2px solid rgb(165, 156, 156);
@@ -176,11 +176,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) and (orientation: portrait) {
     
     .flexWrapper {
         width: 100%;
@@ -196,25 +192,24 @@
 
     #form {
         width: 90%;
-        
     }
 
     #form input {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #form textarea {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         height: 30%;
     }
 
     #form input[type="submit"] {
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin-bottom: 0;
     }
+
     #contactCard {
         width: 100%;
-        
     }
 
     #contactCard ul {
@@ -226,10 +221,9 @@
     }
 
     #contactCard ul li {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         height: 100%;
-        width: 90%;
-        
+        width: 95%;    
     }
 
     .flexWrapper:first-of-type {
@@ -244,5 +238,94 @@
     }
     .contactHeader {
         display: none;
+    }
+}
+
+@media screen and (max-width: 321px) and (orientation: portait) {
+    #contact {
+        padding-top: 3%
+    }
+    .flexWrapper {
+        padding: 0;
+    }
+
+    #form {
+        width: 95%;
+        height: 100%;
+    }
+    #contactCard ul {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    #contact {
+        padding-top: 0;
+        position: relative;
+    }
+
+    #contact > :first-child {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+    }
+
+    .contactHeader {
+        display: none;
+    }
+
+    #mainContactBox {
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 0;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    #form {
+        width: 95%;
+    }
+
+    #form input {
+        font-size: 1.5rem;
+    }
+
+    #form textarea {
+        font-size: 1.5rem;
+        height: 30%;
+    }
+
+    #form input[type="submit"] {
+        font-size: 2rem;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    .flexWrapper {
+        height: 92%;
+        margin-bottom: 2%;
+    }
+
+    #contactCard ul {
+        padding: 10px;
+    }
+
+    #contactCard ul li {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    #contact > :first-child {
+        top: 20%;
+        left: 8%;
+    }
+
+    .flexWrapper:first-child {
+        width: 50%;
+    }
+
+    #contactCard {
+        position: relative;
     }
 }

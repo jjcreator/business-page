@@ -27,7 +27,6 @@ function Services() {
     }
 
     return (
-
             <section className={styles.services} id="services">
                 <Shape textColor="var(--showcase-color)" color="var(--attention-color)" text="Services"/>
                 <div className={styles.servicesText}>We pride ourselves on always providing the highest standards of service, something which is supported by our ever-growing list of testimonials and returning clients.</div>
