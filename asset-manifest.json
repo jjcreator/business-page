@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/business_page/static/css/main.8a769702.chunk.css",
-    "main.js": "/business_page/static/js/main.dcd61a2e.chunk.js",
-    "main.js.map": "/business_page/static/js/main.dcd61a2e.chunk.js.map",
+    "main.css": "/business_page/static/css/main.95d83967.chunk.css",
+    "main.js": "/business_page/static/js/main.a714a083.chunk.js",
+    "main.js.map": "/business_page/static/js/main.a714a083.chunk.js.map",
     "runtime-main.js": "/business_page/static/js/runtime-main.0b1de0ce.js",
     "runtime-main.js.map": "/business_page/static/js/runtime-main.0b1de0ce.js.map",
-    "static/js/2.03d78de1.chunk.js": "/business_page/static/js/2.03d78de1.chunk.js",
-    "static/js/2.03d78de1.chunk.js.map": "/business_page/static/js/2.03d78de1.chunk.js.map",
+    "static/js/2.02d364ba.chunk.js": "/business_page/static/js/2.02d364ba.chunk.js",
+    "static/js/2.02d364ba.chunk.js.map": "/business_page/static/js/2.02d364ba.chunk.js.map",
     "index.html": "/business_page/index.html",
-    "precache-manifest.58e24106e596d47c5453004f7f7d5331.js": "/business_page/precache-manifest.58e24106e596d47c5453004f7f7d5331.js",
+    "precache-manifest.bd562fb36fa4dd98a03e80b038c64c40.js": "/business_page/precache-manifest.bd562fb36fa4dd98a03e80b038c64c40.js",
     "service-worker.js": "/business_page/service-worker.js",
-    "static/css/main.8a769702.chunk.css.map": "/business_page/static/css/main.8a769702.chunk.css.map",
-    "static/js/2.03d78de1.chunk.js.LICENSE.txt": "/business_page/static/js/2.03d78de1.chunk.js.LICENSE.txt"
+    "static/css/main.95d83967.chunk.css.map": "/business_page/static/css/main.95d83967.chunk.css.map",
+    "static/js/2.02d364ba.chunk.js.LICENSE.txt": "/business_page/static/js/2.02d364ba.chunk.js.LICENSE.txt",
+    "static/media/mainStyle.module.css": "/business_page/static/media/city.3d58a996.jpg",
+    "static/media/contactStyle.module.css": "/business_page/static/media/email.71ba3c63.jpg",
+    "static/media/guy3.jpg": "/business_page/static/media/guy3.f7359df3.jpg",
+    "static/media/man-in-black-holding-phone-618613.jpg": "/business_page/static/media/man-in-black-holding-phone-618613.0b3ef8a6.jpg",
+    "static/media/people.jpg": "/business_page/static/media/people.78f724d0.jpg",
+    "static/media/team2.jpg": "/business_page/static/media/team2.0798cf61.jpg",
+    "static/media/woman1.jpg": "/business_page/static/media/woman1.89e5e4ee.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0b1de0ce.js",
-    "static/js/2.03d78de1.chunk.js",
-    "static/css/main.8a769702.chunk.css",
-    "static/js/main.dcd61a2e.chunk.js"
+    "static/js/2.02d364ba.chunk.js",
+    "static/css/main.95d83967.chunk.css",
+    "static/js/main.a714a083.chunk.js"
   ]
 }
