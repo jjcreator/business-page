@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import { NavLink } from "react-router-dom"
+import { NavLink} from "react-router-dom"
+import { HashLink as Link} from "react-router-hash-link"
 import styles from "../modules/navbarStyle.module.css"
 
 function Navbar() {
@@ -25,11 +26,11 @@ function Navbar() {
                         activeStyle={{fontWeight: "bold"}}
                         exact to="/">Home <i class="fa fa-caret-down"></i>
                     </NavLink>
-                    <ul style={{display: displayHomeMenu}}>
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                    </ul>
+                        <ul style={{display: displayHomeMenu}}>
+                            <li><Link to="/#mission">Mission</Link></li>
+                            <li><Link to="/#services">Services</Link></li>
+                            <li><Link to="/#testimonials">Testimonials</Link></li>
+                        </ul>
                 </div>    
                 <NavLink className={styles.link} activeStyle={{fontWeight: "bold"}} to="/about" onClick={()=>setDisplayHomeMenu("none")}>About</NavLink >
                 <NavLink className={styles.link} activeStyle={{fontWeight: "bold"}} to="/contact" onClick={()=>setDisplayHomeMenu("none")}>Contact</NavLink>
