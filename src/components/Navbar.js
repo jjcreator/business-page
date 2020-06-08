@@ -10,7 +10,6 @@ function Navbar() {
   
     return (
         <nav className={`${styles.myNavbar} ${styles.flexColumn}`}>
-        {console.log("navbar render")}
             <div className={styles.flexColumn} id={styles.logo}>
                 <img className={styles.logoImg} src="/logo7.png" alt="company logo"/>
             </div>

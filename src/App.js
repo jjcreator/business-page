@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import Navbar from "./components/Navbar"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { HashRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
 import Main from './components/MainPage/Main';
 import About from './components/AboutPage/About';
