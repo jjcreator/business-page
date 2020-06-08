@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-      <Router>
+      <Router basename="/">
         <MobileNavbar/>
         <Navbar/>
         <div className="pageContainer">
