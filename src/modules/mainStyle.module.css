@@ -1,7 +1,7 @@
 /* -------------------------Showcase styles------------------------- */
 
 #showcase {
-    background-image: url(/city.jpg);
+    background-image: url(../images/city.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;

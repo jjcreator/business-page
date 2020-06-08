@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../../modules/mainStyle.module.css"
 import ScrollAnimation from "react-animate-on-scroll"
+import userImg from "../../images/guy3.jpg"
 
 function TestimonialCard(props) {
     return (

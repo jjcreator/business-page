@@ -4,48 +4,49 @@ import TestimonialCard from "./TestimonialCard.js"
 import styles from "../../modules/mainStyle.module.css"
 import Shape from '../Shape.js'
 import ExpandingLine from "../MainPage/ExpandingLine"
+import userImg from "../../images/guy3.jpg"
 
 const userTesimonials = [
     {
         id: 1,
         name: "Adam Smith",
         city: "Smithsville",
-        img: "./guy3.jpg",
+        img: userImg,
         testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
     },
     {
         id: 2,
         name: "Hans Olo",
         city: "Spaceville",
-        img: "./guy3.jpg",
+        img: userImg,
         testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
     },
     {
         id: 3,
         name: "Chuck N.",
         city: "Texas",
-        img: "./guy3.jpg",
+        img: userImg,
         testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
     },
     {
         id: 4,
         name: "John Doe",
         city: "Forestville",
-        img: "./guy3.jpg",
+        img: userImg,
         testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
     },
     {
         id: 5,
         name: "Jane Doe",
         city: "Forestville",
-        img: "./guy3.jpg",
+        img: userImg,
         testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
     },
     {
         id: 6,
         name: "Boris Y.",
         city: "Moscow",
-        img: "./guy3.jpg",
+        img: userImg,
         testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
     }
 ]
