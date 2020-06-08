@@ -25,7 +25,7 @@ function Navbar() {
                             toggleDisplayHomeMenu()}} 
                         className={styles.link}
                         activeStyle={{fontWeight: "bold"}}
-                        exact to="/">Home <i class="fa fa-caret-down"></i>
+                        exact to="/">Home <i className="fa fa-caret-down"></i>
                     </NavLink>
                         <ul style={{display: displayHomeMenu}}>
                             <li><Link to="/#mission">Mission</Link></li>

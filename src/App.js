@@ -7,7 +7,7 @@ import About from './components/AboutPage/About';
 import Contact from './components/ContactPage/Contact';
 import MobileNavbar from './components/MobileNavbar';
 
-const imageSources = ["./phone.jpg","./city.jpg", "./email.jpg", "./man-in-black-holding-phone-618613.jpg", "./people.jpg", "./phone.jpg", "./team.jpg"];
+const imageSources = ["./images/phone.jpg","./images/city.jpg", "./images/email.jpg", "./images/man-in-black-holding-phone-618613.jpg", "./images/people.jpg", "./images/phone.jpg", "./images/team.jpg"];
 const images = []
 
 function App() {
