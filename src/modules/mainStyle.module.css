@@ -517,7 +517,7 @@ animation: pop 0.4s forwards ease-in;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
 
     #showcaseTitle {
         font-size: 30px;
@@ -596,7 +596,7 @@ animation: pop 0.4s forwards ease-in;
     }
 }
 
-@media screen and (max-width: 650px) and (orientation: landscape) {
+@media screen and (max-width: 850px) and (orientation: landscape) {
     #showcase {
         justify-content: center;
     }
@@ -622,12 +622,17 @@ animation: pop 0.4s forwards ease-in;
 
     #missionRow p {
         border-top: 3px solid var(--primary-color);
-        width: 80%;
+        width: 60%;
         margin-top: 5vh;
     }
 
     #missionImg {
         display: none;
+    }
+
+    .services {
+        margin-top: 5%;
+        padding: 25px;
     }
 
     #list {
@@ -637,5 +642,16 @@ animation: pop 0.4s forwards ease-in;
     .testimonialCard {
         width: 60%;
     }
+    #ctaImg {
+        display: block;
+    }
+    #callToAction {
+        flex-direction: row;
+    }
+}
 
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    #missionRow p {
+        width: 80%;
+    }
 }
