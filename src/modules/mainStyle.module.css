@@ -656,8 +656,30 @@ animation: pop 0.4s forwards ease-in;
     }
 }
 
+@media screen and (max-width: 650px) {
+    .testimonialCard {
+        width: 80%;
+    }
+
+    .testimonialTextBox p {
+        font-size: 1.8rem;
+    }
+}
+
 @media screen and (max-width: 640px) and (orientation: landscape) {
     #missionRow p {
         width: 80%;
+    }
+
+    .servicesText {
+        width: 90%
+    }
+
+    .testimonialCard {
+        width: 60%;
+    }
+
+    .testimonialImg {
+        width: 20%;
     }
 }

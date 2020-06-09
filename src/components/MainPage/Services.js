@@ -55,8 +55,8 @@ function Services() {
                 <div id={styles.list}>
                     {listItems}
                 </div>
-                <ScrollAnimation animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={1700} offset={50}>
-                    <div id={styles.more} className={`bigText ${styles.isAnimated}`}>...and more</div>
+                <ScrollAnimation className={styles.isAnimated} animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={1700} offset={50}>
+                    <div id={styles.more} className={"bigText"}>...and more</div>
                 </ScrollAnimation>
                 <ExpandingLine color="var(--showcase-color)" animationDuration={0.5} animationDelay={2150}/>
             </section>
