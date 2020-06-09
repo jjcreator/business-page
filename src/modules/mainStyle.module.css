@@ -576,6 +576,12 @@ animation: pop 0.4s forwards ease-in;
     #testimonials {
         grid-template: 1fr/1fr;
     }
+
+    .isAnimated {
+        animation: none;
+        /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
+        opacity: 1 !important;
+    }
     #callToAction {
         width: 100%;
         margin-bottom: 0;
@@ -637,8 +643,8 @@ animation: pop 0.4s forwards ease-in;
 
     #list {
         grid-template: 1fr 1fr/ 1fr 1fr;
-        
     }
+
     .testimonialCard {
         width: 60%;
     }

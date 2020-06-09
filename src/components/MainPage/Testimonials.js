@@ -63,7 +63,7 @@ function Testimonials() {
     }, []);
 
     return (
-        <ScrollAnimation animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
+        <ScrollAnimation className={styles.isAnimated} animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
             <section id="testimonials" className={`${styles.testimonialsSection} flexColumn`}>
                 <Shape text="Testimonials"/>
                 <div id={styles.testimonials}>

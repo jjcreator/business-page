@@ -7,7 +7,7 @@ import manWithPhone from "../../images/man-calling.jpg"
 
 function MissionStatement() {
     return (
-        <ScrollAnimation animateIn={styles.animated} animateOnce={false} duration={0.4}>
+        <ScrollAnimation className={styles.isAnimated} animateIn={styles.animated} animateOnce={true} duration={0.4}>
             <section className={`flexColumn ${styles.mission}`} id="mission">
                 <Shape text="Our mission"/>
                 <div id={styles.missionRow}>
