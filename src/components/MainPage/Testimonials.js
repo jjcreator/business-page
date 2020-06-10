@@ -57,7 +57,7 @@ function Testimonials() {
     useEffect(()=> {
         let currentTestimonials = [];
         for (let i=0; i<userTesimonials.length; i++) {
-            currentTestimonials.push(<TestimonialCard name={userTesimonials[i].name} city={userTesimonials[i].city} imgSrc={userTesimonials[i].img} text={userTesimonials[i].testimonial} key={userTesimonials[i].id} animationDelay={(i+1)*200}/>)
+            currentTestimonials.push(<TestimonialCard name={userTesimonials[i].name} city={userTesimonials[i].city} imgSrc={userTesimonials[i].img} text={userTesimonials[i].testimonial} key={userTesimonials[i].id} animationDelay={(i+1)*150}/>)
         }
         setShownTestimonials(currentTestimonials);   
     }, []);
@@ -66,6 +66,7 @@ function Testimonials() {
         <ScrollAnimation className={styles.isAnimated} animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
             <section id="testimonials" className={`${styles.testimonialsSection} flexColumn`}>
                 <Shape text="Testimonials"/>
+                <h3 className={styles.testimonialsIntro}>We've helped hundreds of people from all around the world. Here's what some of our clients say about us:</h3>
                 <div id={styles.testimonials}>
                     {shownTestimonials}
                 </div>

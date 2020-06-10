@@ -275,8 +275,15 @@ animation: pop 0.4s forwards ease-in;
 #testimonials {
     display: grid;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     grid-template: 1fr/ 1fr 1fr 1fr;
+}
+
+.testimonialsIntro {
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 2%;
+    font-weight: lighter;
 }
 
 .testimonialCard {
@@ -421,7 +428,7 @@ animation: pop 0.4s forwards ease-in;
     .paragraph {
         font-size: 14px;
     }
-    #showcaseDescription h2 {
+    .paragraphHeader {
         font-size: 20px;
     }
     #showcaseButton {
@@ -440,10 +447,13 @@ animation: pop 0.4s forwards ease-in;
     #callToAction {
         width: 70%
     }
-
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
+
+    #showcaseTitle {
+        font-size: 40px;
+    }
     
     #showcaseDescription {
         border-left: 3px solid var(--tertiary-color);
@@ -451,7 +461,7 @@ animation: pop 0.4s forwards ease-in;
         padding: 10px;
     }
 
-    #showcaseDescription h2 {
+    .paragraphHeader {
         font-size: 25px;
         font-family: Raleway, sans-serif;
     }
@@ -505,6 +515,7 @@ animation: pop 0.4s forwards ease-in;
     #testimonials {
         grid-template: 1fr/1fr 1fr;
     }
+
     #callToAction {
         width: 90%;
     }
@@ -520,20 +531,16 @@ animation: pop 0.4s forwards ease-in;
 @media screen and (max-width: 850px) {
 
     #showcaseTitle {
-        font-size: 30px;
+        font-size: 35px;
         width: 100%;
         padding: 20px;
     }
     #showcaseDescription {
         border-left: 3px solid var(--tertiary-color);
-        width: 90%;
+        width: 70%;
         padding: 5px;
     }
     #showcaseDescription p {
-        font-size: 15px;
-    }
-    #showcaseButton {
-        padding: 15px;
         font-size: 15px;
     }
     
@@ -573,8 +580,9 @@ animation: pop 0.4s forwards ease-in;
     .listItem p {
         font-size: 18px;
     }
-    #testimonials {
-        grid-template: 1fr/1fr;
+
+    .testimonialTextBox p {
+        font-size: 1.8rem;
     }
 
     .isAnimated {
@@ -628,8 +636,8 @@ animation: pop 0.4s forwards ease-in;
 
     #missionRow p {
         border-top: 3px solid var(--primary-color);
-        width: 60%;
-        margin-top: 5vh;
+        width: 65%;
+        margin-top: 3vh;
     }
 
     #missionImg {
@@ -644,7 +652,6 @@ animation: pop 0.4s forwards ease-in;
     #list {
         grid-template: 1fr 1fr/ 1fr 1fr;
     }
-
     .testimonialCard {
         width: 60%;
     }
@@ -656,17 +663,45 @@ animation: pop 0.4s forwards ease-in;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .testimonialCard {
-        width: 80%;
+@media screen and (max-width: 680px) {
+    #showcaseTitle {
+        font-size: 28px;
+        padding: 10px;
+        width: 90%;
     }
 
-    .testimonialTextBox p {
-        font-size: 1.8rem;
+    .paragraphHeader {
+        font-size: 20px;
+    }
+
+    #showcaseDescription {
+        width: 100%;
+    }
+
+    #showcaseButton {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    #doubleArrow {
+        font-size: 15px;
+    }
+
+    #testimonials {
+        grid-template: 1fr/1fr;
+    }
+    .testimonialCard {
+        width: 70%;
     }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 680px) and (orientation: landscape) {
+    #showcaseTitle {
+        width: 80%;
+    }
+
+    
+
     #missionRow p {
         width: 80%;
     }

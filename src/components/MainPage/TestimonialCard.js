@@ -12,7 +12,6 @@ function TestimonialCard(props) {
                         <span className={styles.authorName}>{props.name},&nbsp;</span>
                         <span className={styles.authorCity}>{props.city}</span>
                     </p> 
-                    
                 </div>
                 <div className={styles.testimonialTextBox}>
                     <i className={`fas fa-quote-left ${styles.quote} ${styles.quoteLeft}`}/>

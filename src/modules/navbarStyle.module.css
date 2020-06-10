@@ -87,7 +87,7 @@
     width: 70%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .myNavbar {
       display: none;
     }

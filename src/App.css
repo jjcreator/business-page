@@ -45,7 +45,7 @@ a {
     font-size: 22px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   .pageContainer {
     width: 100%;
     margin: 0;

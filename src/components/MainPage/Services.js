@@ -39,7 +39,7 @@ function Services() {
             }
             else setIsMobile(false);
             for (let i=1; i<services.length + 1; i++) {
-                items.push(<ScrollAnimation className={`${styles.listItem} ${styles.isAnimated}`} animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={i * 150} offset={50} key={i}>
+                items.push(<ScrollAnimation className={`${styles.listItem} ${styles.isAnimated}`} animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={i * 90} offset={50} key={i}>
                     <i className={`fas fa-landmark ${styles.icon}`}/><p>{services[i-1]}</p>
                 </ScrollAnimation>);
             setListItems(items)
@@ -55,10 +55,10 @@ function Services() {
                 <div id={styles.list}>
                     {listItems}
                 </div>
-                <ScrollAnimation className={styles.isAnimated} animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={1700} offset={50}>
+                <ScrollAnimation className={styles.isAnimated} animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={1100} offset={50}>
                     <div id={styles.more} className={"bigText"}>...and more</div>
                 </ScrollAnimation>
-                <ExpandingLine color="var(--showcase-color)" animationDuration={0.5} animationDelay={2150}/>
+                <ExpandingLine color="var(--showcase-color)" animationDuration={0.5} animationDelay={1750}/>
             </section>
     )
 }
