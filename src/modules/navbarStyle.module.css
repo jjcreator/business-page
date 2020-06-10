@@ -15,14 +15,12 @@
     overflow: hidden;
     position: relative;
     top: 10px;
-    
 }
 
 .flexColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #links {
@@ -35,7 +33,6 @@
 
 .link {
     font-family: Raleway, sans-serif;
-    color: white;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
@@ -57,18 +54,19 @@
     text-align: center;
     position: absolute;
     top: 120%;
-    color: white;
     list-style-type: none;
-    background-color: var(--secondary-color);
-    box-shadow: var(--box-shadow);
-    margin-left: auto;
+    background: linear-gradient(223deg, var(--secondary-color), var(--primary-color));
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 1px;
 }
 
 .homeLinks ul li {
-    padding: 5px 14px;
+    padding: 10px;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
+    font-family: Raleway;
 }
 
 .homeLinks ul li:hover {

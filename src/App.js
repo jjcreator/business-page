@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import Navbar from "./components/Navbar"
-import { HashRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
 import Main from './components/MainPage/Main';
 import About from './components/AboutPage/About';
@@ -20,12 +20,12 @@ function App() {
   }, []);
 
   return (
-      <Router basename="/">
+      <Router basename={process.env.PUBLIC_URL}>
         <MobileNavbar/>
         <Navbar/>
         <div className="pageContainer">
           <Switch>
-              <Route path="/" exact>
+              <Route path={"/"} exact>
                 <Main/>
               </Route>
               <Route path="/about">

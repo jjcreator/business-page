@@ -530,18 +530,17 @@ animation: pop 0.4s forwards ease-in;
 
 @media screen and (max-width: 850px) {
 
+
     #showcaseTitle {
         font-size: 35px;
-        width: 100%;
         padding: 20px;
+        margin-bottom: 5%;
     }
     #showcaseDescription {
         border-left: 3px solid var(--tertiary-color);
         width: 70%;
         padding: 5px;
-    }
-    #showcaseDescription p {
-        font-size: 15px;
+
     }
     
     .mission {
@@ -615,19 +614,35 @@ animation: pop 0.4s forwards ease-in;
         justify-content: center;
     }
 
+    #showcaseTitle {
+        font-size: 30px;
+    }
+
     #showcaseBody {
         padding-top: 0;
         padding-bottom: 0;
         margin-bottom: 20px;
+        width: 90%;
+    }
+
+    #showcaseDescription {
         width: 80%;
     }
 
     .paragraphHeader {
         padding: 0;
+        font-size: 20px;;
+    }
+
+    #showcaseButton {
+        font-size: 16px;
+        font-weight: lighter;
+        padding: 18px;
     }
 
     #doubleArrow {
         padding: 15px;
+        font-size: 15px;
     }
 
     #missionRow {
@@ -681,6 +696,7 @@ animation: pop 0.4s forwards ease-in;
     #showcaseButton {
         font-size: 16px;
         font-weight: lighter;
+        padding: 18px;
     }
 
     #doubleArrow {
@@ -696,11 +712,15 @@ animation: pop 0.4s forwards ease-in;
 }
 
 @media screen and (max-width: 680px) and (orientation: landscape) {
-    #showcaseTitle {
-        width: 80%;
+
+    #showcaseBody {
+        width: 90%;
     }
 
-    
+    #showcaseDescription {
+        margin-top: 5%;
+    }
+
 
     #missionRow p {
         width: 80%;
@@ -716,5 +736,34 @@ animation: pop 0.4s forwards ease-in;
 
     .testimonialImg {
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    #showcaseDescription p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) and (orientation: landscape) {
+    #showcaseTitle {
+        font-size: 25px;
+    }
+
+    .paragraphHeader {
+        display: none;
+    }
+
+    #showcaseDescription {
+        margin-top: 2%;
+    }
+
+    #showcaseDescription p {
+        font-size: 14px;
+        padding: 12px;
+    }
+    #showcaseButton {
+        font-size: 15px;
+        padding: 16px;
     }
 }

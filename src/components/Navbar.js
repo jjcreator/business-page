@@ -28,7 +28,7 @@ function Navbar() {
                         exact to="/">Home <i className="fa fa-caret-down"></i>
                     </NavLink>
                         <ul style={{display: displayHomeMenu}}>
-                            <li><Link to="/#mission">Mission</Link></li>
+                            <li><a href="#mission">Mission</a></li>
                             <li><Link to="/#services">Services</Link></li>
                             <li><Link to="/#testimonials">Testimonials</Link></li>
                         </ul>
