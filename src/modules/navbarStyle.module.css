@@ -2,15 +2,14 @@
     height: 100%;
     width: 11%;
     justify-content: flex-start;
-    z-index: 2;
     background-color: var(--secondary-color);
     position: fixed;
     box-shadow: inset -5px 0px 10px -8px black;
     z-index: 200;
+    overflow: hidden;
 }
 
 #wave {
-    z-index: 5;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -28,7 +27,6 @@
     justify-content: space-evenly;
     width: 100%;
     background-color: var(--primary-color);
-    z-index: 10;
 }
 
 .link {
@@ -36,11 +34,23 @@
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
 }
 
-.link:hover {
-    color: white;
-    text-decoration: none;
+.link::after {
+    content: "";
+    width: 110%;
+    position: absolute;
+    bottom: -10px;
+    border-top: 3px solid var(--tertiary-color);
+    left: -5%;
+    transform: scaleX(0);
+    transition: ease-in 200ms;
+    border-radius: 5px;
+}
+
+.link:hover::after {
+    transform: scale(1);
 }
 
 .homeLinks {
@@ -56,9 +66,9 @@
     top: 120%;
     list-style-type: none;
     background: linear-gradient(223deg, var(--secondary-color), var(--primary-color));
+    background: none;
     overflow: hidden;
-    border: 1px solid white;
-    border-radius: 1px;
+    border-top: none;
 }
 
 .homeLinks ul li {
@@ -66,23 +76,46 @@
     margin: 0;
     font-size: 14px;
     cursor: pointer;
-    font-family: Raleway;
+    font-family: Roboto;
 }
-
+ 
 .homeLinks ul li:hover {
-    background-color: var(--primary-color);
+   background-color: var(--secondary-color);
+   
 }
 
-#logo {
+#logoContainer {
     height: 25%;
     font-size: 25px;
     width: 100%;
     padding: 20px 0px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .logoImg {
     width: 70%;
+}
+
+.underline {
+    font-weight: bolder;;
+}
+
+.underline::after {
+    content: "";
+    width: 110%;
+    position: absolute;
+    bottom: -10px;
+    border-top: 3px solid var(--attention-color);
+    left: -5%;
+    transform: scaleX(1);
+    transition: border ease-in 400ms;
+    border-radius: 5px;
+}
+
+@media (max-width: 1150px) {
+    .link {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 850px) {

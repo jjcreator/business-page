@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import styles from "../modules/mobileNavbarStyle.module.css"
 import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 function MobileNavbar() {
 
@@ -68,9 +69,16 @@ function MobileNavbar() {
     return (
         <div className={styles.mobileNavigation}>
             <i id={styles.mobileIcon} className="fas fa-bars" style={isVisible.hamburger} onClick={toggleMobileMenu}/>
-            <div id={styles.mobileNavbarBody} style={isVisible.menu}>
+            <div className={styles.mobileNavbarBody} style={isVisible.menu}>
                 <i id={styles.mobileExitIcon} onClick={toggleMobileMenu} className="fas fa-times"/>
-                <NavLink exact to="/" onClick={toggleMobileMenu}>Home</NavLink>
+                
+                <div className={`flexColumn ${styles.mobileHomeLinks}`}>
+                    <NavLink id={styles.mobileHomeLink} exact to="/" onClick={toggleMobileMenu}>Home</NavLink>
+                    <HashLink exact to="/#mission" onClick={toggleMobileMenu}>mission</HashLink>
+                    <HashLink exact to="/#services" onClick={toggleMobileMenu}>services</HashLink>
+                    <HashLink exact to="/#testimonials" onClick={toggleMobileMenu}>testimonials</HashLink>
+                </div>
+                
                 <NavLink to="/about" onClick={toggleMobileMenu}>About</NavLink>
                 <NavLink to="/contact" onClick={toggleMobileMenu}>Contact</NavLink>
             </div>

@@ -2,7 +2,7 @@
     display: none;
 }
 
-#mobileNavbarBody {
+.mobileNavbarBody {
     background-color: var(--secondary-color);
     position: fixed;
     top: 0;
@@ -17,7 +17,7 @@
     box-shadow: inset -5px 0px 10px -8px black;
 }
 
-#mobileNavbarBody a {
+.mobileNavbarBody a, #mobileHomeLink {
     color: var(--showcase-color);
     font-family: Raleway;
     text-transform: uppercase;
@@ -27,8 +27,11 @@
     text-decoration: none;
 }
 
-#mobileNavbarBody a:hover {
-    text-decoration: none;
+.mobileHomeLinks a {
+    padding: 10px;
+    margin: 10px;
+    text-transform: lowercase;
+    font-size: 18px;
 }
 
 #mobileIcon {
@@ -41,7 +44,6 @@
     background-color: var(--primary-color);
     padding: 10px;
     cursor: pointer;
-    
 }
 
 #mobileExitIcon {
@@ -67,16 +69,16 @@
     .mobileNavigation {
         display: block;
     }
-    #mobileNavbarBody a {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 650px) {
-    #mobileNavbarBody {
+    .mobileNavbarBody {
         width: 40%;
     }
-    #mobileNavbarBody a {
+    .mobileNavbarBody a {
         font-size: 20px;
+    }
+    .mobileHomeLinks a {
+        font-size: 16px;
     }
 }

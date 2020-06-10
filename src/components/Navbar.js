@@ -12,7 +12,7 @@ function Navbar() {
   
     return (
         <nav className={`${styles.myNavbar} ${styles.flexColumn}`}>
-            <div className={styles.flexColumn} id={styles.logo}>
+            <div className={styles.flexColumn} id={styles.logoContainer}>
                 <img className={styles.logoImg} src={logo} alt="company logo"/>
             </div>
             <div id={styles.wave}>
@@ -24,17 +24,17 @@ function Navbar() {
                             window.scrollTo(0,0);
                             toggleDisplayHomeMenu()}} 
                         className={styles.link}
-                        activeStyle={{fontWeight: "bold"}}
+                        activeClassName={styles.underline}
                         exact to="/">Home <i className="fa fa-caret-down"></i>
                     </NavLink>
-                        <ul style={{display: displayHomeMenu}}>
-                            <li><a href="#mission">Mission</a></li>
-                            <li><Link to="/#services">Services</Link></li>
-                            <li><Link to="/#testimonials">Testimonials</Link></li>
-                        </ul>
+                    <ul style={{display: displayHomeMenu}}>
+                        <Link to="/#mission"><li>mission</li></Link>
+                        <Link to="/#services"><li>services</li></Link>
+                        <Link to="/#testimonials"><li>testimonials</li></Link>
+                    </ul>
                 </div>    
-                <NavLink className={styles.link} activeStyle={{fontWeight: "bold"}} to="/about" onClick={()=>setDisplayHomeMenu("none")}>About</NavLink >
-                <NavLink className={styles.link} activeStyle={{fontWeight: "bold"}} to="/contact" onClick={()=>setDisplayHomeMenu("none")}>Contact</NavLink>
+                <NavLink className={styles.link} activeClassName={styles.underline} to="/about" onClick={()=>setDisplayHomeMenu("none")}>About</NavLink >
+                <NavLink className={styles.link} activeClassName={styles.underline} to="/contact" onClick={()=>setDisplayHomeMenu("none")}>Contact</NavLink>
             </div>
         </nav>  
     )
