@@ -74,11 +74,10 @@ function MobileNavbar() {
                 
                 <div className={`flexColumn ${styles.mobileHomeLinks}`}>
                     <NavLink id={styles.mobileHomeLink} exact to="/" onClick={toggleMobileMenu}>Home</NavLink>
-                    <HashLink exact to="/#mission" onClick={toggleMobileMenu}>mission</HashLink>
-                    <HashLink exact to="/#services" onClick={toggleMobileMenu}>services</HashLink>
-                    <HashLink exact to="/#testimonials" onClick={toggleMobileMenu}>testimonials</HashLink>
+                    <HashLink to="/#mission" onClick={toggleMobileMenu}>mission</HashLink>
+                    <HashLink to="/#services" onClick={toggleMobileMenu}>services</HashLink>
+                    <HashLink to="/#testimonials" onClick={toggleMobileMenu}>testimonials</HashLink>
                 </div>
-                
                 <NavLink to="/about" onClick={toggleMobileMenu}>About</NavLink>
                 <NavLink to="/contact" onClick={toggleMobileMenu}>Contact</NavLink>
             </div>

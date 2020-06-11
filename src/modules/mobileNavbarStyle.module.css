@@ -71,14 +71,36 @@
     }
 }
 
+@media (max-width: 850px) and (orientation: landscape) {
+    .mobileNavbarBody {
+        width: 40%;
+    }
+    .mobileNavbarBody a, #mobileHomeLink {
+        font-size: 20px;
+    }
+    .mobileHomeLinks a {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .mobileNavbarBody {
         width: 40%;
     }
-    .mobileNavbarBody a {
+    .mobileNavbarBody a, #mobileHomeLink {
         font-size: 20px;
     }
     .mobileHomeLinks a {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
+
+@media (orientation: landscape) {
+    .mobileNavbarBody a, #mobileHomeLink {
+        margin: 15px;
+        padding: 0;
+    }
+}
+
+
+    

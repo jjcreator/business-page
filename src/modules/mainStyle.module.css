@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght@700|Roboto:wght@700|Playfair+Display&display=swap');
+
+
 /* -------------------------Showcase styles------------------------- */
 
 #showcase {
@@ -81,8 +84,8 @@ animation: pop 0.4s forwards ease-in;
 .paragraphHeader {
     font-size: 22px;
     padding: 10px;
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
 }
 
 #showcaseButton {
@@ -712,12 +715,29 @@ animation: pop 0.4s forwards ease-in;
 
 @media screen and (max-width: 680px) and (orientation: landscape) {
 
+    #showcaseTitle {
+        font-size: 25px;
+    }
+
     #showcaseBody {
-        width: 90%;
+        width: 70%;
     }
 
     #showcaseDescription {
         margin-top: 5%;
+    }
+
+    #showcaseDescription {
+        margin-top: 2%;
+    }
+
+    #showcaseDescription p {
+        font-size: 14px;
+        padding: 12px;
+    }
+    #showcaseButton {
+        font-size: 15px;
+        padding: 16px;
     }
 
 
@@ -738,9 +758,12 @@ animation: pop 0.4s forwards ease-in;
     }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
     #showcaseDescription p {
         font-size: 14px;
+    }
+    .testimonialCard {
+        width: 85%;
     }
 }
 
