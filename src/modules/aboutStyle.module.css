@@ -26,6 +26,7 @@
     margin-top: 5vh;
     font-family: Raleway, sans-serif;
     flex-direction: row-reverse;
+    color: var(--primary-color);
 }
 
 #teamImg {
@@ -37,7 +38,7 @@
     width: 55%;
     font-size: 18px;
     line-height: 2;
-    border: 3px solid #011936;
+    border: 3px solid var(--primary-color);
     border-right: none;
     padding: 30px;
     text-justify: inter-word;
@@ -47,7 +48,7 @@
 #aboutText span {
     font-size: 25px;
     text-transform: uppercase;
-    color:#ED254E;
+    color:var(--attention-color);
     line-height: 1;
     font-weight: bold;
 }
@@ -59,12 +60,10 @@
 @keyframes pop {
     0% {
         opacity: 0;
-        
     }
 
     100% {
         opacity: 1;
-        
     }
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:wght@700|Roboto|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght@700|Roboto&display=swap');
 
 .pageContainer {
   background: #edf3f2;
@@ -10,6 +10,7 @@
   position: relative;
   height: 100%;
   font-family: Raleway, sans-serif;
+  color: var(--text-color);
 }
 
 .flexColumn {
@@ -20,12 +21,73 @@
 }
 
 .bigText {
-    text-transform: uppercase;
-    color: #ED254E;
-    font-weight: bolder;
-    font-size: 24px;
-    line-height: 1;
-    padding-right: 5px;
+  text-transform: uppercase;
+  color: var(--attention-color);
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 1;
+  padding-right: 5px;
+}
+
+.paragraph {
+  padding: 10px;
+  line-height: 2;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.roundedLine {
+  border-top: 5px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-top: 10vh;
+}
+
+.expand {
+  animation: expand 0.5s ease-in forwards;
+}
+
+@keyframes expand {
+  0% {
+      width: 0px
+  }
+  100% {
+      width: 26%;
+  }
+}
+
+.pop {
+  animation: pop 0.4s forwards ease-in;
+}
+
+.actionButton {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 20px;
+  background-color: var(--attention-color);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px black;
+  transition: 0.1s ease-in;
+  font-weight: bold;
+  font-family: Raleway;
+  color: var(--text-color)
+}
+
+.actionButton:hover {
+  transform: translateY(2%);
+  background-color: rgb(190, 29, 61);
+}
+  
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(1%);
+    }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
 }
 
 a {
@@ -52,5 +114,16 @@ a {
   }
   .bigText {
     font-size: 20px;
+  }
+  .isAnimated {
+    animation: none;
+    /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
+    opacity: 1 !important;
+}
+}
+
+@media screen and (max-width: 360px) {
+  .bigText {
+    font-size: 16px;
   }
 }

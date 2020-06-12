@@ -1,0 +1,30 @@
+#callToAction {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    margin: 8vh auto;
+}
+
+#callToAction p {
+    line-height: 2;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+    padding: 10px;
+}
+
+#callToAction span {
+    color: red;
+    font-weight: 600;
+}
+
+#ctaImg {
+    width: 20%
+}
+

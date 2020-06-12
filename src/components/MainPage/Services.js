@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import styles from "../../modules/mainStyle.module.css"
+import styles from "../../modules/servicesStyle.module.css"
 import Shape from "../Shape"
 import ScrollAnimation from "react-animate-on-scroll"
 import ExpandingLine from './ExpandingLine'

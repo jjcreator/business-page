@@ -1,0 +1,95 @@
+.testimonialsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 100px 0 100px;
+    width: 100%;
+}
+
+#testimonials {
+    display: grid;
+    width: 100%;
+    margin-top: 5%;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+}
+
+.testimonialsIntro {
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 2%;
+    font-weight: lighter;
+}
+
+.testimonialCard {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    justify-content: flex-start;
+    background-color: var(--showcase-color);
+    margin: 0 auto 10% auto;
+}
+
+.testimonialTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--showcase-color);
+    font-size: 16px;
+    position: relative;
+    height: 40%;
+}
+
+.testimonialTopText {
+    margin-right: auto;
+    padding: 0 0 0 20px;
+    width: 75%;
+}
+
+.authorName {
+    font-weight: bolder;
+}
+
+.testimonialImg {
+    border-radius: 50%;
+    width: 25%; 
+    z-index: 3;
+    border: 3px solid var(--showcase-color);
+    margin-left: 7%;
+}
+
+.quote {
+    font-size: 18px;
+    color: var(--attention-color);
+}
+
+.quoteLeft {
+    margin-right: auto;
+}
+
+.quoteRight {
+    margin-left: auto;
+}
+
+.testimonialTextBox {
+    height: 70%;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.testimonialTextBox p {
+    margin: 0 35px;
+}

@@ -7,6 +7,7 @@
     box-shadow: inset -5px 0px 10px -8px black;
     z-index: 200;
     overflow: hidden;
+    color: var(--text-color)
 }
 
 #wave {
@@ -45,7 +46,7 @@
     border-top: 3px solid var(--tertiary-color);
     left: -5%;
     transform: scaleX(0);
-    transition: ease-out 300ms;
+    transition: ease-out 200ms;
     border-radius: 5px;
 }
 
@@ -67,7 +68,6 @@
     background: none;
     overflow: hidden;
     animation: appear 800ms forwards;
-    
 }
 
 @keyframes appear {
@@ -107,17 +107,6 @@
     font-weight: bolder;;
 }
 
-.underline::after {
-    content: "";
-    width: 110%;
-    position: absolute;
-    bottom: -10px;
-    border-top: 3px solid var(--attention-color);
-    left: -5%;
-    transform: scaleX(1);
-    transition: border ease-in 400ms;
-    border-radius: 5px;
-}
 
 @media (max-width: 1150px) {
     .link {

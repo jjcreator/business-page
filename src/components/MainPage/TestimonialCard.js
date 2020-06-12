@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from "../../modules/mainStyle.module.css"
+import styles from "../../modules/testimonialsStyle.module.css"
 import ScrollAnimation from "react-animate-on-scroll"
 
 function TestimonialCard(props) {
     return (
-        <ScrollAnimation className={styles.isAnimated} animateIn="zoomIn" animateOnce={true} duration={1.2} delay={props.animationDelay} offset={200}>
+        <ScrollAnimation className={"isAnimated"} animateIn="zoomIn" animateOnce={true} duration={1.2} delay={props.animationDelay} offset={200}>
             <div className={`${styles.testimonialCard}`}>
                 <div className={styles.testimonialTop}>
                     <img className={styles.testimonialImg} src={props.imgSrc} alt="user"/>

@@ -18,7 +18,7 @@
 }
 
 .mobileNavbarBody a, #mobileHomeLink {
-    color: var(--showcase-color);
+    color: var(--text-color);
     font-family: Raleway;
     text-transform: uppercase;
     font-size: 30px;
@@ -35,7 +35,7 @@
 }
 
 #mobileIcon {
-    color: var(--showcase-color);
+    color: var(--text-color);
     font-size: 30px;
     position: fixed;
     top: 0;
@@ -47,7 +47,7 @@
 }
 
 #mobileExitIcon {
-    color: var(--showcase-color);
+    color: var(--text-color);
     position: fixed;
     top: 0%;
     left: 0%;

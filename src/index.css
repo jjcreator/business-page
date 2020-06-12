@@ -1,6 +1,6 @@
 :root {
   --box-shadow: 2px 2px 5px rgb(0, 0, 0);
-  --showcase-color: rgb(255, 255, 255);
+  --text-color: rgb(255, 255, 255);
   --primary-color: #011936;
   --secondary-color: #235789;
   --tertiary-color: #f9dc5c;
@@ -42,5 +42,11 @@ code {
 @media screen and (max-width: 900px) {
   :root {
     font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  :root {
+    font-size: 7px;
   }
 }

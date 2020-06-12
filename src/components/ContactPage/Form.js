@@ -63,7 +63,7 @@ function Form() {
                 <input placeholder="Your email" type="email" name="email" value={messageData.email} onChange={handleFormInputChange}/>
                 <input type="text" placeholder="Subject" name="title" value={messageData.title} onChange={handleFormInputChange}/>
                 <textarea placeholder="Type in your message here" name="message" value={messageData.message} onChange={handleFormInputChange}></textarea>
-                <input type="submit" value="Send"/>
+                <button className={"actionButton"} type="submit">Send</button>
         </form>
         </div>
     )

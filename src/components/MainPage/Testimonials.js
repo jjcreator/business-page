@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ScrollAnimation from "react-animate-on-scroll"
 import TestimonialCard from "./TestimonialCard.js"
-import styles from "../../modules/mainStyle.module.css"
+import styles from "../../modules/testimonialsStyle.module.css"
 import Shape from '../Shape.js'
 import ExpandingLine from "../MainPage/ExpandingLine"
 import userImg from "../../images/guy.jpg"
@@ -63,7 +63,7 @@ function Testimonials() {
     }, []);
 
     return (
-        <ScrollAnimation className={styles.isAnimated} animateIn={styles.animated} animateOnce={true} offset={250} duration={0.4}>
+        <ScrollAnimation className={"isAnimated"} animateIn={"pop"} animateOnce={true} offset={250} duration={0.4}>
             <section id="testimonials" className={`${styles.testimonialsSection} flexColumn`}>
                 <Shape text="Testimonials"/>
                 <h3 className={styles.testimonialsIntro}>We've helped hundreds of people from all around the world. Here's what some of our clients say about us:</h3>
