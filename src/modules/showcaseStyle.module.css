@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(3, 3, 78, 0.493);
+    background-color: rgba(3, 3, 78, 0.45);
     width: 100%;
     height: 100%;
 }
@@ -48,19 +48,33 @@
     padding: 10px;
 }
 
-.paragraphHeader {
+#showcaseHeader {
     font-size: 22px;
-    padding: 10px;
+    padding: 15px;
+    font-family: Raleway;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
 }
 
+#showcaseParagraph {
+    padding: 10px 10px 15px 10px;
+    line-height: 2;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+
 #teamImg {
-    width: 45%;
+    width: 46%;
     z-index: 2;
     box-shadow: -4px 4px 10px black;
 }
 
 #showcase button {
     margin-bottom: 4%;
+    font-size: 20px;
 }
 
 #doubleArrow {
@@ -88,10 +102,202 @@
 @keyframes flashing {
     0% {
         color:var(--text-color);
-        
     }
     100% {
         color: transparent;
-        
+    }
+}
+
+/* -- Media Queries -- */
+   
+@media (max-width: 1300px) {
+    #showcaseDescription {
+        width: 42%;
+    }
+
+    #showcaseHeader {
+        font-size: 20px;
+    }
+
+    #showcaseParagraph {
+        font-size: 15px;
+    }
+
+    #showcaseButton {
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    #teamImg {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1150px) {
+    #showcaseTitle {
+        font-size: 40px;
+    }
+    
+    #showcaseDescription {
+        border-left: 3px solid var(--tertiary-color);
+        width: 70%;
+        padding: 10px;
+    }
+
+    #showcaseHeader {
+        font-size: 25px;
+    }
+
+    #showcaseParagraph {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #teamImg {
+        display: none;
+    }
+
+    #doubleArrow {
+        right: 2%;
+    }
+    
+    #showcase button {
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #showcaseTitle {
+        font-size: 35px;
+        padding: 20px;
+        margin-bottom: 5%;
+    }
+
+    #showcaseParagraph {
+        font-size: 15px;
+    }
+
+    #showcaseDescription {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    #showcase {
+        justify-content: center;
+    }
+
+    #showcaseTitle {
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+
+    #showcaseBody {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    #showcaseHeader {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    #showcaseDescription {
+        width: 80%;
+    }
+
+    #showcase button {
+        font-size: 16px;
+        font-weight: lighter;
+        padding: 18px;
+    }
+
+    #doubleArrow {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #showcaseTitle {
+        font-size: 30px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    #showcaseHeader {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #showcaseParagraph {
+        font-size: 15px;
+    }
+
+    #showcaseDescription {
+        width: 90%;
+    }
+
+    #showcase button {
+        font-size: 16px;
+        font-weight: lighter;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
+    #showcaseTitle {
+        font-size: 25px;
+    }
+
+    #showcaseBody {
+        width: 80%;
+    }
+
+    #showcaseDescription {
+        margin-top: 2%;
+    }
+
+    #showcase button {
+        font-size: 15px;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 580px) and (orientation: landscape) {
+    #showcaseTitle {
+        margin-bottom: 0;
+    }
+
+    #showcaseBody {
+        width: 90%;
+    }
+
+    #showcaseHeader {
+        display: none;
+    }
+
+    #showcaseParagraph {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    #showcaseTitle {
+        font-size: 22px;
+        padding:0;
+        margin-bottom: 0;
+    }
+
+    #showcaseBody {
+        padding: 10px;
+    }
+    #showcaseParagraph {
+        font-size: 14px;
     }
 }

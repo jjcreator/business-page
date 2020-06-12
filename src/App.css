@@ -29,13 +29,6 @@
   padding-right: 5px;
 }
 
-.paragraph {
-  padding: 10px;
-  line-height: 2;
-  font-family: Roboto, sans-serif;
-  font-size: 15px;
-}
-
 .roundedLine {
   border-top: 5px solid var(--secondary-color);
   border-radius: 5px;
@@ -69,7 +62,7 @@
   box-shadow: 2px 2px 5px black;
   transition: 0.1s ease-in;
   font-weight: bold;
-  font-family: Raleway;
+  font-family: Roboto, sans-serif;
   color: var(--text-color)
 }
 
@@ -101,11 +94,14 @@ a {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   
   .bigText {
     font-size: 22px;
   }
+  .roundedLine {
+    margin-top: 5vh;
+}
 }
 @media (max-width: 850px) {
   .pageContainer {
@@ -119,7 +115,7 @@ a {
     animation: none;
     /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
     opacity: 1 !important;
-}
+  }
 }
 
 @media screen and (max-width: 360px) {

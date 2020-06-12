@@ -39,7 +39,7 @@
 }
 
 .icon {
-    color: #ED254E;
+    color: var(--attention-color);
     margin-right: 5px;
     font-size: 20px;
 }
@@ -59,4 +59,48 @@
     font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    .services {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .servicesText {
+        font-size: 15px;
+    }
+
+    #list {
+        width: 100%;
+        padding: 20px 40px;
+        grid-template: 1fr/ 1fr
+    }
+
+    .listItem p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    .services {
+        margin-top: 5%;
+        padding: 25px;
+    }
+
+    #list {
+        grid-template: 1fr 1fr/ 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
+    .servicesText {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .listItem p, .listItem i {
+        font-size: 16px;
+    }
 }

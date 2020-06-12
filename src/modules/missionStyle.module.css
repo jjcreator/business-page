@@ -1,7 +1,6 @@
 .mission {
     margin-top: 5vh;
     width: 100%;
-    padding: 10px;
     justify-content: center;
 }
 
@@ -12,16 +11,118 @@
     margin-top: 10vh;
 }
 
-#missionRow p {
+.missionParagraph {
     border: 3px solid var(--primary-color);
     border-right: none;
     width: 40%;
-    padding: 25px;
-    margin: 0;
+    padding: 20px;
     color: var(--primary-color);
 }
 
 #missionImg {
     width: 40%;
     box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 1300px) {
+    #missionImg {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1150px) {
+    #mission {
+        margin-top: 4vh;
+    }
+
+    #missionRow {
+        flex-direction: column-reverse;
+        width: 45%;
+    }
+    
+    .missionParagraph {
+        width: 100%;
+        padding: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+        border: 3px solid var(--primary-color);
+        border-top: none;
+    }
+
+    #missionImg {
+        width: 100%;
+        border: 3px solid var(--primary-color);
+        border-bottom: none;
+        bordeR: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .mission {
+        padding-bottom: none;
+        padding-top: 20px;
+    }
+
+    #missionRow {
+        margin-top: 2vh;
+        width: 45%;
+    }
+
+    #missionRow p {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    #missionRow {
+        flex-direction: row;
+    }
+
+    .missionParagraph {
+        border-top: 3px solid var(--primary-color);
+        width: 5%;
+        margin-top: 3vh;
+    }
+
+    #missionImg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #missionRow {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
+    .missionParagraph {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 580px) and (orientation: landscape) {
+    .mission {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #missionRow {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mission {
+        margin: 0;
+    }
+    #missionRow {
+        width: 85%;
+    }
+
+    .missionParagraph {
+        text-align: left;
+    }
 }

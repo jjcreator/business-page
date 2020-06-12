@@ -15,8 +15,8 @@ function Showcase() {
             <div className={"pop"} id={styles.showcaseBody}>
                 <img id={styles.teamImg} src={team} alt="the team"/>
                 <div className="flexColumn" id={styles.showcaseDescription}>
-                    <h2 className={styles.paragraphHeader}>Best fake specialists</h2>
-                    <p className={"paragraph"}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                    <h2 id={styles.showcaseHeader}>Best fake specialists</h2>
+                    <p id={styles.showcaseParagraph}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
                     <Link to="/contact"><button className={"actionButton"}>Get help now</button></Link>
                 </div>
             </div>
