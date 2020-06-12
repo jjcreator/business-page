@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/business_page/static/css/main.dda6e42b.chunk.css",
-    "main.js": "/business_page/static/js/main.15846d7b.chunk.js",
-    "main.js.map": "/business_page/static/js/main.15846d7b.chunk.js.map",
+    "main.css": "/business_page/static/css/main.0f9f2ffd.chunk.css",
+    "main.js": "/business_page/static/js/main.c80044ee.chunk.js",
+    "main.js.map": "/business_page/static/js/main.c80044ee.chunk.js.map",
     "runtime-main.js": "/business_page/static/js/runtime-main.0b1de0ce.js",
     "runtime-main.js.map": "/business_page/static/js/runtime-main.0b1de0ce.js.map",
-    "static/js/2.c8ea9653.chunk.js": "/business_page/static/js/2.c8ea9653.chunk.js",
-    "static/js/2.c8ea9653.chunk.js.map": "/business_page/static/js/2.c8ea9653.chunk.js.map",
+    "static/js/2.f80a1110.chunk.js": "/business_page/static/js/2.f80a1110.chunk.js",
+    "static/js/2.f80a1110.chunk.js.map": "/business_page/static/js/2.f80a1110.chunk.js.map",
     "index.html": "/business_page/index.html",
-    "precache-manifest.e90b80fdd6a36978457ba4f5b0665f84.js": "/business_page/precache-manifest.e90b80fdd6a36978457ba4f5b0665f84.js",
+    "precache-manifest.314320d798ffbefd1608b718d96e23dc.js": "/business_page/precache-manifest.314320d798ffbefd1608b718d96e23dc.js",
     "service-worker.js": "/business_page/service-worker.js",
-    "static/css/main.dda6e42b.chunk.css.map": "/business_page/static/css/main.dda6e42b.chunk.css.map",
-    "static/js/2.c8ea9653.chunk.js.LICENSE.txt": "/business_page/static/js/2.c8ea9653.chunk.js.LICENSE.txt",
-    "static/media/mainStyle.module.css": "/business_page/static/media/city.3d58a996.jpg",
+    "static/css/main.0f9f2ffd.chunk.css.map": "/business_page/static/css/main.0f9f2ffd.chunk.css.map",
+    "static/js/2.f80a1110.chunk.js.LICENSE.txt": "/business_page/static/js/2.f80a1110.chunk.js.LICENSE.txt",
+    "static/media/showcaseStyle.module.css": "/business_page/static/media/city.3d58a996.jpg",
     "static/media/contactStyle.module.css": "/business_page/static/media/contact.3a02b5f8.jpg",
     "static/media/guy.jpg": "/business_page/static/media/guy.2346e925.jpg",
     "static/media/man-calling.jpg": "/business_page/static/media/man-calling.ff635e29.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0b1de0ce.js",
-    "static/js/2.c8ea9653.chunk.js",
-    "static/css/main.dda6e42b.chunk.css",
-    "static/js/main.15846d7b.chunk.js"
+    "static/js/2.f80a1110.chunk.js",
+    "static/css/main.0f9f2ffd.chunk.css",
+    "static/js/main.c80044ee.chunk.js"
   ]
 }
