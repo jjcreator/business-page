@@ -7,7 +7,7 @@ function TraditionalContact() {
         <div className={styles.flexWrapper}>
             <h2 id={styles.contactCardHeader} className={styles.contactHeader}>Call us</h2>
             <div id={styles.contactCard}>
-                    <ul>
+                    <ul id={styles.contactCardList}>
                         <li><i className="fas fa-map-pin"></i><b>Our Office:</b> 123 Fake Street, Neverland</li>
                         <li><i className="fas fa-phone"></i><b>Phone:</b> 0-700-123-Fake</li>
                         <li><i className="fas fa-fax"></i><b>Fax:</b> 0-700-123-FakeFax</li>

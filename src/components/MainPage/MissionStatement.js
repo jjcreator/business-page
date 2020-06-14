@@ -11,10 +11,10 @@ function MissionStatement() {
             <section className={`flexColumn ${styles.mission}`} id="mission">
                 <Shape text="Our mission"/>
                 <div id={styles.missionRow}>
-                    <p className={styles.missionParagraph}><span className="bigText">Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <p className={styles.missionParagraph}><span className={styles.bigText}>Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                     <img id={styles.missionImg} src={manWithPhone} alt="man in black holding phone"/>
                 </div>
-                <ExpandingLine animationDuration={0.5} animationDelay={400} offset={100}/>
+                <ExpandingLine animationDuration={0.4} animationDelay={600} offset={0}/>
             </section>
         </ScrollAnimation>
     )

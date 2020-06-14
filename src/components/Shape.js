@@ -4,12 +4,12 @@ function Shape(props) {
     const shapeStyle = {
         backgroundColor: props.color || "var(--primary-color)",
         transform: "skew(-20deg)",
-        padding: "1.2rem 3.5rem"
+        padding: "1.2rem 4.5rem"
     }
 
     const textStyle = {
         textAlign: "center",
-        fontSize: "3.8rem",
+        fontSize: "3rem",
         color: props.textColor || "var(--showcase-color)",
         transform: "skew(20deg)",
         margin: 0,

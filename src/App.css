@@ -20,19 +20,9 @@
   align-items: center;
 }
 
-.bigText {
-  text-transform: uppercase;
-  color: var(--attention-color);
-  font-weight: bolder;
-  font-size: 24px;
-  line-height: 1;
-  padding-right: 5px;
-}
-
 .roundedLine {
   border-top: 5px solid var(--secondary-color);
   border-radius: 5px;
-  margin-top: 10vh;
 }
 
 .expand {
@@ -44,7 +34,7 @@
       width: 0px
   }
   100% {
-      width: 26%;
+      width: 250px;
   }
 }
 
@@ -88,29 +78,17 @@ a {
   color: var(--showcase-color)
 }
 
-@media screen and (max-width: 1300px) {
-  .bigText {
-    font-size: 25px;
-  }
-}
+
 
 @media screen and (max-width: 1150px) {
-  
-  .bigText {
-    font-size: 22px;
-  }
-  .roundedLine {
-    margin-top: 5vh;
-}
+
 }
 @media (max-width: 850px) {
   .pageContainer {
     width: 100%;
     margin: 0;
   }
-  .bigText {
-    font-size: 20px;
-  }
+  
   .isAnimated {
     animation: none;
     /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
@@ -118,8 +96,35 @@ a {
   }
 }
 
-@media screen and (max-width: 360px) {
-  .bigText {
-    font-size: 16px;
+@media (max-width: 850px) {
+  @keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 200px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  @keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 150px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  @keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 125px;
+    }
   }
 }

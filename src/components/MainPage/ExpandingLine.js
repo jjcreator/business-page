@@ -6,10 +6,9 @@ function ExpandingLine(props) {
         borderTop: `5px solid ${props.color}`
     }
     return (
-        <ScrollAnimation animateIn={"expand"} animateOnce={true} duration={props.animationDuration} delay={props.animationDelay} offset={100}>
+        <ScrollAnimation animateIn={"expand"} animateOnce={false} duration={props.animationDuration} delay={props.animationDelay} offset={props.offset}>
             <hr style={lineStyle} className={"roundedLine"}/>
         </ScrollAnimation>
     )
 }
-
 export default ExpandingLine

@@ -45,8 +45,14 @@ code {
   }
 }
 
+@media (max-width: 580px) and (orientation: landscape) {
+  :root {
+    font-size: 8px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   :root {
-    font-size: 7px;
+    font-size: 7.5px;
   }
 }

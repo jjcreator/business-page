@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin: 5vh 0 10vh 0;
 }
 
 .missionParagraph {
@@ -17,6 +17,17 @@
     width: 40%;
     padding: 20px;
     color: var(--primary-color);
+    font-size: 16px;
+    line-height: 2;
+}
+
+.bigText {
+    text-transform: uppercase;
+    color: var(--attention-color);
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 1;
+    padding-right: 5px;
 }
 
 #missionImg {
@@ -28,60 +39,73 @@
     #missionImg {
         width: 45%;
     }
+
+    .missionParagraph {
+        width: 42%;
+    }
 }
 
-@media (max-width: 1150px) {
-    #mission {
-        margin-top: 4vh;
+@media (max-width: 1200px) {
+    .mission {
+        margin-top: 3vh;
     }
 
     #missionRow {
         flex-direction: column-reverse;
         width: 45%;
+        margin: 5vh 0;
     }
     
     .missionParagraph {
         width: 100%;
-        padding: 20px;
+        padding: 15px;
         text-align: justify;
         text-justify: inter-word;
         border: 3px solid var(--primary-color);
         border-top: none;
     }
 
+    .bigText {
+        font-size: 20px;
+    }
+
     #missionImg {
         width: 100%;
+        box-shadow: none;
         border: 3px solid var(--primary-color);
         border-bottom: none;
-        bordeR: none;
-        box-shadow: none;
+    }
+}
+
+@media (max-width: 900px) {
+    #missionRow {
+        width: 55%;
     }
 }
 
 @media screen and (max-width: 850px) {
-    .mission {
-        padding-bottom: none;
-        padding-top: 20px;
-    }
-
     #missionRow {
-        margin-top: 2vh;
-        width: 45%;
+        width: 50%;
     }
 
-    #missionRow p {
-        padding: 10px;
+    .missionParagraph {
+        font-size: 15px;
+    }
+
+    .bigText {
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 850px) and (orientation: landscape) {
     #missionRow {
         flex-direction: row;
+        width: 70%;
     }
 
     .missionParagraph {
         border-top: 3px solid var(--primary-color);
-        width: 5%;
+        width: 100%;
         margin-top: 3vh;
     }
 
@@ -92,13 +116,22 @@
 
 @media screen and (max-width: 680px) {
     #missionRow {
-        width: 60%;
+        width: 65%;
+        margin-top: 4vh;
     }
+    .missionParagraph {
+        line-height: 1.7;
+    }
+
 }
 
 @media screen and (max-width: 680px) and (orientation: landscape) {
+    #missionRow {
+        width: 75%;
+        margin-bottom: 10vh;
+    }
     .missionParagraph {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -106,23 +139,41 @@
     .mission {
         margin: 0;
     }
+    .missionParagraph {
+        font-size: 14px;
+    }
+    .bigText {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 450px) {
     #missionRow {
-        width: 80%;
+        width: 85%;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
     .mission {
-        margin: 0;
-    }
-    #missionRow {
-        width: 85%;
+        margin-top: 5vh;
     }
 
     .missionParagraph {
-        text-align: left;
+        font-size: 14px;
+        padding: 15px;
+        border: 3px solid var(--primary-color);
     }
+    
+    #missionRow {
+        width: 80%;
+        margin: 7vh 0;
+    }
+
+    #missionImg {
+        display: none;
+    }
+    .bigText {
+        font-size: 18px;
+    }
+
 }

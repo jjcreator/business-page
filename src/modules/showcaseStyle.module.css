@@ -51,9 +51,8 @@
 #showcaseHeader {
     font-size: 22px;
     padding: 15px;
-    font-family: Raleway;
+    font-family: Roboto, sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
     font-weight: 500;
     text-align: center;
 }
@@ -87,10 +86,9 @@
     font-size: 20px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    padding: 10px;
     cursor: pointer;
-    height: 5vh;
-    width: 5vh;
+    height: 40px;
+    width: 40px;
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
@@ -181,6 +179,12 @@
     #showcaseDescription {
         padding: 5px;
     }
+
+    #doubleArrow {
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 850px) and (orientation: landscape) {
@@ -215,10 +219,6 @@
         padding: 18px;
     }
 
-    #doubleArrow {
-        padding: 15px;
-        font-size: 15px;
-    }
 }
 
 @media screen and (max-width: 680px) {
@@ -289,15 +289,22 @@
 @media (max-width: 360px) {
 
     #showcaseTitle {
-        font-size: 22px;
+        font-size: 24px;
         padding:0;
-        margin-bottom: 0;
+        margin-bottom: 10%;
     }
 
     #showcaseBody {
         padding: 10px;
     }
+
+    #showcaseHeader {
+        font-size: 18px;
+    }
     #showcaseParagraph {
+        font-size: 14px;
+    }
+    #doubleArrow {
         font-size: 14px;
     }
 }
