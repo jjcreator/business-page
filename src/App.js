@@ -8,14 +8,14 @@ import Contact from './components/ContactPage/Contact';
 import MobileNavbar from './components/MobileNavbar';
 
 const imageSources = ["./images/phone.jpg","./images/city.jpg", "./images/email.jpg", "./images/man-in-black-holding-phone-618613.jpg", "./images/people.jpg", "./images/phone.jpg", "./images/team.jpg"];
-const images = []
+// const images = []
 
 function App() {
 
-  useEffect(()=> {
-    imageSources.forEach((srcText, index) => {
-      images[index] = new Image();
-      images[index].src = srcText;
+  useEffect(() => {
+    imageSources.forEach(srcText => {
+      let image = new Image;
+      image.src = srcText;
     });
   }, []);
 

@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.servicesText {
+.servicesHeader {
     margin-top: 5vh;
     font-size: 18px;
     width: 80%;
@@ -47,25 +47,29 @@
     line-height: 1;
 }
 
-@media screen and (max-width: 850px) {
-    .services {
-        padding: 15px;
-        margin: 0;
-    }
-
-    .servicesText {
-        font-size: 15px;
-    }
-
+@media (max-width: 1200px) {
     .servicesList {
-        width: 100%;
-        padding: 20px 40px;
-        grid-template: 1fr/ 1fr
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .servicesHeader {
+        font-size: 16px;
+    }
+    .listItem {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 850px) {
+    .servicesHeader {
+        font-size: 17px;
+    }
+    .bottomText {
+        font-size: 20px;
     }
 
-    .listItem p {
-        font-size: 18px;
-    }
 }
 
 @media screen and (max-width: 850px) and (orientation: landscape) {
@@ -74,19 +78,84 @@
         padding: 25px;
     }
 
-    #list {
+    .servicesList {
         grid-template: 1fr 1fr/ 1fr 1fr;
+        grid-gap: 20px;
     }
+}
+
+@media (max-width: 680px) {
+    .servicesHeader {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .servicesList {
+        padding: 0;
+    }
+    
+    .listItem {
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (max-width: 680px) and (orientation: landscape) {
-    .servicesText {
+    .servicesHeader {
         width: 90%
+    }
+    .servicesList {
+        grid-gap: 20px;
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 360px) {
-    .listItem p, .listItem i {
+@media (max-width: 580px) {
+    .servicesList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 0;
+        grid-gap: 20px;
+        width: 80%;
+        margin: 3vh 0px 3vh 40px;
+    }
+    .listItem {
+        margin: 10px 0;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 580px) and (orientation: landscape) {
+    .servicesList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-gap: 20px;
+        width: 90%;
+        margin: 7vh 0;
+    }
+    .listItem {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .listItem {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .servicesHeader {
+        line-height: 1.4;
+
+    }
+    .servicesList {
+        margin: 3vh 0;
     }
 }

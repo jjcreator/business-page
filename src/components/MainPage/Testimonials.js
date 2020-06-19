@@ -63,16 +63,14 @@ function Testimonials() {
     }, []);
 
     return (
-        <ScrollAnimation className={"isAnimated"} animateIn={"pop"} animateOnce={true} offset={250} duration={0.4}>
-            <section id="testimonials" className={`${styles.testimonialsSection} flexColumn`}>
-                <Shape text="Testimonials"/>
-                <h3 className={styles.testimonialsIntro}>We've helped hundreds of people from all around the world. Here's what some of our clients say about us:</h3>
-                <div id={styles.testimonials}>
-                    {shownTestimonials}
-                </div>
-                <ExpandingLine animationDuration={0.5} animationDelay={400}/> 
-            </section>
-        </ScrollAnimation>
+        <section id="testimonials" className={`${styles.testimonialsSection} flexColumn`}>
+            <Shape color="var(--primary-color)" text="Testimonials"/>
+            <h3 className={styles.testimonialsIntro}>We've helped hundreds of people from all around the world. Here's what some of our clients say about us:</h3>
+            <div id={styles.testimonials}>
+                {shownTestimonials}
+            </div>
+            <ExpandingLine animationDuration={0.5} animationDelay={400}/> 
+        </section>
     )
 }
 

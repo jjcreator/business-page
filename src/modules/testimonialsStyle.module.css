@@ -1,37 +1,32 @@
 .testimonialsSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5vh 100px 0 100px;
+    margin-top: 15vh;
+    padding: 0 20px;
     width: 100%;
 }
 
 #testimonials {
     display: grid;
-    width: 100%;
-    margin-top: 5%;
+    width: 80%;
     grid-template: 1fr/ 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 5vh;
 }
 
 .testimonialsIntro {
     font-size: 2rem;
-    padding: 20px;
+    padding: 20px 20px 4% 20px;
     margin-top: 2%;
     font-weight: lighter;
+    color: var(--primary-color);
 }
 
 .testimonialCard {
-    width: 90%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 2px 2px 5px black;
+    width: 100%;
+    min-height: 275px;
+    box-shadow: var(--box-shadow);
     position: relative;
     justify-content: flex-start;
     background-color: var(--text-color);
-    margin: 0 auto 10% auto;
 }
 
 .testimonialTop {
@@ -41,27 +36,22 @@
     align-items: center;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
-    height: 40%;
 }
 
 .testimonialTopText {
-    margin-right: auto;
-    padding: 0 0 0 20px;
-    width: 75%;
+    flex: 1;
+    height: 100%;
 }
 
 .authorName {
-    font-weight: bolder;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 .testimonialImg {
-    border-radius: 50%;
-    width: 25%; 
-    z-index: 3;
-    border: 3px solid var(--text-color);
-    margin-left: 7%;
+    width: 30%;
 }
 
 .quote {
@@ -78,25 +68,27 @@
 }
 
 .testimonialTextBox {
-    height: 70%;
     width: 100%;
     padding: 15px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-size: 16px;
     color: var(--primary-color);
+    flex: 1;
 }
 
 .testimonialTextBox p {
-    margin: 0 35px;
+    margin: 0 40px;
 }
 
-@media (max-width: 1300px) {
-    .testimonialsSection {
-        padding: 20px;
+@media (min-width: 1450px) {
+    #testimonials {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #testimonials {
+        width: 85%;
     }
 }
 
@@ -107,6 +99,9 @@
 }
 
 @media (max-width: 850px) {
+    #testimonials {
+        grid-gap: 25px;
+    }
     .testimonialTextBox p {
         font-size: 1.8rem;
     }
@@ -120,18 +115,22 @@
 
 @media (max-width: 680px) {
     #testimonials {
-        grid-template: 1fr/1fr;
+        grid-template: 1fr/1fr 1fr;
+        width: 90%;
     }
     .testimonialCard {
-        width: 70%;
+        width: 100%;
+        min-height: 250px;
+    }
+    .testimonialImg {
+        width: 25%;
     }
 }
 
 @media (max-width: 680px) and (orientation: landscape) {
     .testimonialCard {
-        width: 60%;
+        width: 100%;
     }
-
     .testimonialImg {
         width: 20%;
     }
@@ -140,5 +139,12 @@
 @media screen and (max-width: 580px) and (orientation: landscape) {
     .testimonialCard {
         width: 85%;
+    }
+}
+
+@media (max-width: 580px) {
+    #testimonials {
+        grid-template-columns: 1fr;
+        width: 60%;
     }
 }

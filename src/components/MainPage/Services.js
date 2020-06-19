@@ -51,11 +51,11 @@ function Services() {
     return (
             <section className={styles.services} id="services">
                <Shape textColor="var(--text-color)" color="var(--attention-color)" text="Services"/>
-               <div className={styles.servicesText}>We pride ourselves on always providing the highest standards of service, something which is supported by our ever-growing list of returning clients.</div>
+               <div className={styles.servicesHeader}>We pride ourselves on always providing the highest standards of service, something which is supported by our ever-growing list of returning clients.</div>
                 <div className={styles.servicesList}>
                     {listItems}
                 </div>
-                <ScrollAnimation className={styles.isAnimated} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={1000} offset={50}>
+                <ScrollAnimation className={"isAnimated"} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={1000} offset={50}>
                     <div className={styles.bottomText}>...and more</div>
                 </ScrollAnimation>
                 <ExpandingLine color="var(--text-color)" animationDuration={0.5} animationDelay={1750} offset={50}/>
