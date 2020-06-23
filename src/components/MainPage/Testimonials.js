@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import ScrollAnimation from "react-animate-on-scroll"
 import TestimonialCard from "./TestimonialCard.js"
 import styles from "../../modules/testimonialsStyle.module.css"
 import Shape from '../Shape.js'
