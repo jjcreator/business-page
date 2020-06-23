@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from "./components/Navbar"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
@@ -8,14 +8,16 @@ import Contact from './components/ContactPage/Contact';
 import MobileNavbar from './components/MobileNavbar';
 
 const imageSources = ["./images/phone.jpg","./images/city.jpg", "./images/email.jpg", "./images/man-in-black-holding-phone-618613.jpg", "./images/people.jpg", "./images/phone.jpg", "./images/team.jpg"];
-// const images = []
 
 function App() {
+  const [loadedImages, setLoadedImages] = useState([]);
 
   useEffect(() => {
-    imageSources.forEach(srcText => {
-      let image = new Image;
+    imageSources.map(srcText => {
+      let image = new Image();
       image.src = srcText;
+      setLoadedImages([...loadedImages, image]);
+      return image
     });
   }, []);
 
