@@ -11,13 +11,13 @@ const imageSources = ["./images/phone.jpg","./images/city.jpg", "./images/email.
 
 function App() {
 
-  useEffect(() => {
-    imageSources.map(srcText => {
-      let image = new Image();
-      image.src = srcText;
-      return image
-    });
-  }, []);
+  // useEffect(() => {
+  //   imageSources.map(srcText => {
+  //     let image = new Image();
+  //     image.src = srcText;
+  //     return image
+  //   });
+  // }, []);
 
   return (
       <Router basename={process.env.PUBLIC_URL}>
