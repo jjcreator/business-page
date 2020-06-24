@@ -55,7 +55,7 @@ function Services() {
                 <div className={styles.servicesList}>
                     {listItems}
                 </div>
-                <ScrollAnimation className={"isAnimated"} animateIn={chosenAnimation} animateOnce={false} duration={duration} delay={1000} offset={50}>
+                <ScrollAnimation className={"isAnimated"} animateIn={chosenAnimation} animateOnce={true} duration={duration} delay={1000} offset={50}>
                     <div className={styles.bottomText}>...and more</div>
                 </ScrollAnimation>
                 <ExpandingLine color="var(--text-color)" animationDuration={0.5} animationDelay={1750} offset={50}/>
