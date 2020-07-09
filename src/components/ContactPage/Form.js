@@ -57,11 +57,11 @@ function Form() {
         <h2 className={styles.contactHeader}>Contact form</h2>
         <form id={styles.form} onSubmit={handleSubmit}>
                 <div id={styles.nameGroup}>
-                    <input className={styles.name} placeholder="Your first name" type="text" name="firstName" value={messageData.firstName} onChange={handleFormInputChange}/>
-                    <input className={styles.name} placeholder="Your last name" type="text" name="lastName" value={messageData.lastName} onChange={handleFormInputChange}/>
+                    <input className={styles.name} placeholder="Your first name" type="text" name="firstName" value={messageData.firstName} onChange={handleFormInputChange} required pattern="\p{L}+\s\p{L}+"/>
+                    <input className={styles.name} placeholder="Your last name" type="text" required pattern="\p{L}+\s\p{L}+" name="lastName" value={messageData.lastName} onChange={handleFormInputChange}/>
                 </div>
-                <input placeholder="Your email" type="email" name="email" value={messageData.email} onChange={handleFormInputChange}/>
-                <input type="text" placeholder="Subject" name="title" value={messageData.title} onChange={handleFormInputChange}/>
+                <input placeholder="Your email" type="email" name="email" value={messageData.email} onChange={handleFormInputChange} required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"/>
+                <input type="text" required placeholder="Subject" name="title" value={messageData.title} onChange={handleFormInputChange}/>
                 <textarea placeholder="Type in your message here" name="message" value={messageData.message} onChange={handleFormInputChange}></textarea>
                 <button className={"actionButton"} type="submit">Send</button>
         </form>
