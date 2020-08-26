@@ -1,6 +1,6 @@
 .myNavbar {
     height: 100%;
-    width: 11%;
+    width: 180px;
     justify-content: flex-start;
     background-color: var(--secondary-color);
     position: fixed;
@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     .myNavbar {
       display: none;
     }

@@ -4,8 +4,8 @@
   background: #edf3f2;
   background: linear-gradient(107deg, rgba(237,243,242,1) 20%, rgba(255,255,255,1) 50%, rgba(237,243,242,1) 80%);
   z-index: 20;
-  width: 89%;
-  margin: 0 0 0 11%;
+  width: calc(100% - 180px);
+  margin: 0 0 0 180px;
   padding: 0;
   position: relative;
   height: 100%;
@@ -80,10 +80,7 @@ a {
 
 
 
-@media screen and (max-width: 1150px) {
-
-}
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .pageContainer {
     width: 100%;
     margin: 0;
@@ -94,9 +91,6 @@ a {
     /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
     opacity: 1 !important;
   }
-}
-
-@media (max-width: 850px) {
   @keyframes expand {
     0% {
         width: 0px

@@ -152,17 +152,104 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .flexWrapper {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    #mainContactBox {
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0px;
+        height: 100%;
+        margin-top: 2vh;
+        align-items: center;
+    }
+
+    .flexWrapper {
+        width: 100%;
+    }
+
     .flexWrapper:first-of-type {
-        width: 50%;
+        height: 70%;
+        justify-content: center;
     }
 
     .flexWrapper:nth-of-type(2) {
-        width: 40%;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 2%;
+        height: 20%;
     }
 
     #form {
-        padding: 0;
+        width: 60%;
     }
+
+    #form input {
+        font-size: 1.8rem;
+    }
+
+    #form textarea {
+        font-size: 1.8rem;
+        height: 30%;
+    }
+
+    #form button {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    #contactCard {
+        width: 100%;
+        height: 100%;
+    }
+
+    #contactCardList {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        flex-direction: row;
+    }
+
+    #contactCardList li {
+        font-size: 1.7rem;
+        height: 100%;
+        width: 95%;    
+    }
+
+    .contactHeader {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #form {
+        width: 80%
+    }
+    .flexWrapper:nth-of-type(2) {
+        height: 30%;
+    }
+    #contactCardList {
+        display: flex;
+        flex-direction: column;
+    }
+    #contactCardList li {
+        font-size: 2rem;
+        height: 100%;
+        width: 100%;    
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #form {
+        width: 90%
+    }
+
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
@@ -222,70 +309,7 @@
     }
 }
 
-@media screen and (max-width: 750px) {
-    
-    .flexWrapper {
-        width: 100%;
-    }
 
-    #mainContactBox {
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0;
-        height: 100%;
-        margin-top: 2vh;
-    }
-
-    #form {
-        width: 90%;
-    }
-
-    #form input {
-        font-size: 1.8rem;
-    }
-
-    #form textarea {
-        font-size: 1.8rem;
-        height: 30%;
-    }
-
-    #form button {
-        font-size: 2.3rem;
-        margin-bottom: 0;
-    }
-
-    #contactCard {
-        width: 100%;
-    }
-
-    #contactCardList {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: var(--secondary-color);
-        color: var(--text-color);
-    }
-
-    #contactCardList li {
-        font-size: 1.7rem;
-        height: 100%;
-        width: 95%;    
-    }
-
-    .flexWrapper:first-of-type {
-        flex: 1;
-    }
-
-    .flexWrapper:nth-of-type(2) {
-        flex-direction: row;
-        align-items: flex-end;
-        flex-basis: 20%;
-        margin-top: 2%;
-    }
-    .contactHeader {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 600px) and (orientation: landscape) {
     #contact > :first-child {

@@ -1,45 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import styles from "../modules/mobileNavbarStyle.module.css"
 import { NavLink } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 
 function MobileNavbar() {
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-    useEffect(()=> {
-        window.addEventListener("resize", ()=> {
-            setWindowWidth(window.innerWidth)
-        });
-        return () => {
-            window.removeEventListener("resize", ()=> {
-                setWindowWidth(window.innerWidth)
-            });
-        }
-    }, []);
-
-    useEffect(()=> {
-        if (windowWidth > 900) {
-            setIsVisible({
-                hamburger: {
-                    display: "block",
-                },
-                menu : {
-                    display: "none",
-                    animation: "none"
-                }
-            })
-        }
-
-    },[windowWidth])
-
     const [isVisible, setIsVisible] = useState({
         hamburger: {
             display: "block",
         },
         menu : {
-            display: "none",
-            animation: "none"
+            transform: "translateX(-100%)"
         }
     });
 
@@ -50,18 +21,17 @@ function MobileNavbar() {
                     display: "none"
                 },
                 menu : {
-                    display: "flex",
-                    animation: "slideInLeft 0.5s"
+                    transform: "translateX(0)"
                 }
             });
+
         }
         else setIsVisible({
             hamburger: {
                 display: "block"
             },
             menu: {
-                display: "none",
-                animation: "none"
+                transform: "translateX(-100%)"
             }
         })
     }
@@ -71,7 +41,6 @@ function MobileNavbar() {
             <i id={styles.mobileIcon} className="fas fa-bars" style={isVisible.hamburger} onClick={toggleMobileMenu}/>
             <div className={styles.mobileNavbarBody} style={isVisible.menu}>
                 <i id={styles.mobileExitIcon} onClick={toggleMobileMenu} className="fas fa-times"/>
-                
                 <div className={`flexColumn ${styles.mobileHomeLinks}`}>
                     <NavLink id={styles.mobileHomeLink} exact to="/" onClick={toggleMobileMenu}>Home</NavLink>
                     <HashLink to="/#mission" onClick={toggleMobileMenu}>mission</HashLink>
