@@ -54,7 +54,7 @@
     box-shadow: var(--box-shadow);
     background-color: rgba(255, 255, 255, 0.075);
     position: relative;
-    transition: 0.65s ease-in;
+    transition: 0.66s ease-in;
 }
 
 #form input {
