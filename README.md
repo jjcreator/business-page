@@ -2,7 +2,7 @@
 
 A simple website for a ficticious legal company. Created to practice using the React library, it features a clean design with a vertical navbar and a custom logo. React-router is used to redirect the user, animations added using react-animate-on-scroll.
 
-[![business site mockup](/fakelawyers.png)](https://jjcreator.github.io/business_page/)
+[![business site mockup](/fakelwayers.png)](https://jjcreator.github.io/business_page/)
 
 
 ## Technologies
