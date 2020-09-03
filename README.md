@@ -21,6 +21,13 @@ A website project created to reinforce and improve my React skills. Working on i
 
 #### Main features
 
+* clean design with a vertical navbar
+* custom logo
+* a home page composed of a hero section with a call to action and 3 other sections (mission, services, testimonials)
+* a basic about page
+* a contact page with a contact form - the inputs are controlled components which allows the data to be assigned as state and then displayed as an alert. Plus simple HTML validation.
+* responsive
+
 
 ## Launch
 
@@ -28,4 +35,4 @@ Create with the help of create-react-app and deployed on Github Pages.
 
 ## Sources
 
-Created using create-react-app (https://github.com/facebook/create-react-app). Images from pexels.com and pixabay.com. Animated with react-animate-on-scroll (https://dbramwell.github.io/react-animate-on-scroll/)
+Created using create-react-app (https://github.com/facebook/create-react-app). Images from pexels.com and pixabay.com. Animated with react-animate-on-scroll (https://dbramwell.github.io/react-animate-on-scroll/). Logo made with https://www.freelogodesign.org/
