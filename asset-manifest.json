@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/business_page/static/css/main.729db02f.chunk.css",
+    "main.css": "/business_page/static/css/main.0be9a10a.chunk.css",
     "main.js": "/business_page/static/js/main.3beb2505.chunk.js",
     "main.js.map": "/business_page/static/js/main.3beb2505.chunk.js.map",
     "runtime-main.js": "/business_page/static/js/runtime-main.0b1de0ce.js",
@@ -8,9 +8,9 @@
     "static/js/2.081cfbb3.chunk.js": "/business_page/static/js/2.081cfbb3.chunk.js",
     "static/js/2.081cfbb3.chunk.js.map": "/business_page/static/js/2.081cfbb3.chunk.js.map",
     "index.html": "/business_page/index.html",
-    "precache-manifest.aab9a51a901ab30d2999806e50841664.js": "/business_page/precache-manifest.aab9a51a901ab30d2999806e50841664.js",
+    "precache-manifest.bfada4887ec7d6d9931cc303e7b74231.js": "/business_page/precache-manifest.bfada4887ec7d6d9931cc303e7b74231.js",
     "service-worker.js": "/business_page/service-worker.js",
-    "static/css/main.729db02f.chunk.css.map": "/business_page/static/css/main.729db02f.chunk.css.map",
+    "static/css/main.0be9a10a.chunk.css.map": "/business_page/static/css/main.0be9a10a.chunk.css.map",
     "static/js/2.081cfbb3.chunk.js.LICENSE.txt": "/business_page/static/js/2.081cfbb3.chunk.js.LICENSE.txt",
     "static/media/showcaseStyle.module.css": "/business_page/static/media/city.3d58a996.jpg",
     "static/media/contactStyle.module.css": "/business_page/static/media/contact.3a02b5f8.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.0b1de0ce.js",
     "static/js/2.081cfbb3.chunk.js",
-    "static/css/main.729db02f.chunk.css",
+    "static/css/main.0be9a10a.chunk.css",
     "static/js/main.3beb2505.chunk.js"
   ]
 }
