@@ -30,12 +30,13 @@
 }
 
 #teamImg {
-    width: 40%;
+    width: 38%;
     box-shadow: 2px 2px 5px black;
+    
 }
 
 #aboutText {
-    width: 50%;
+    width: 42%;
     font-size: 16px;
     line-height: 2;
     border: 3px solid var(--primary-color);
@@ -64,6 +65,12 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1500px) {
+    #teamImg, #aboutText {
+        width: 50%;
     }
 }
 

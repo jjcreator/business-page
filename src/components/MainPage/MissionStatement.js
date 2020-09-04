@@ -11,7 +11,7 @@ function MissionStatement() {
             <section className={`flexColumn ${styles.mission}`} id="mission">
                 <Shape text="Our mission"/>
                 <div id={styles.missionRow}>
-                    <p className={styles.missionParagraph}><span className={styles.bigText}>Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <p className={styles.missionParagraph}><span className={styles.bigText}>We alwayas strive</span> to provide outstanding legal services that deliver the best possible client outcomes. We are more than just fake lawyers – our clients come to us because we are people they can talk to about what matters to them. We recruit high calibre people. Clients and other professionals recommend and champion us. Legal directories and other market influencers praise us. </p>
                     <img id={styles.missionImg} src={manWithPhone} alt="man in black holding phone"/>
                 </div>
                 <ExpandingLine animationDuration={0.4} animationDelay={600} offset={0}/>

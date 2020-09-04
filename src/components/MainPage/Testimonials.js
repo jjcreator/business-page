@@ -11,42 +11,42 @@ const userTesimonials = [
         name: "Adam Smith",
         city: "Smithsville",
         img: userImg,
-        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+        testimonial: "This is my first time ever having to use a fake attorney and I could not have made a better decision. Very honest and up front about everything. I have never once felt like I was just any client."
     },
     {
         id: 2,
         name: "Hans Olo",
         city: "Spaceville",
         img: userImg,
-        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+        testimonial: "This is my first time ever having to use a fake attorney and I could not have made a better decision. Very honest and up front about everything. I have never once felt like I was just any client."
     },
     {
         id: 3,
         name: "Chuck N.",
         city: "Texas",
         img: userImg,
-        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+        testimonial: "This is my first time ever having to use a fake attorney and I could not have made a better decision. Very honest and up front about everything. I have never once felt like I was just any client."
     },
     {
         id: 4,
         name: "John Doe",
         city: "Forestville",
         img: userImg,
-        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+        testimonial: "This is my first time ever having to use a fake attorney and I could not have made a better decision. Very honest and up front about everything. I have never once felt like I was just any client."
     },
     {
         id: 5,
         name: "Jane Doe",
         city: "Forestville",
         img: userImg,
-        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+        testimonial: "This is my first time ever having to use a fake attorney and I could not have made a better decision. Very honest and up front about everything. I have never once felt like I was just any client."
     },
     {
         id: 6,
         name: "Boris Y.",
         city: "Moscow",
         img: userImg,
-        testimonial: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur."
+        testimonial: "This is my first time ever having to use a fake attorney and I could not have made a better decision. Very honest and up front about everything. I have never once felt like I was just any client."
     }
 ]
 

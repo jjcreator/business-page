@@ -14,11 +14,12 @@
 .missionParagraph {
     border: 3px solid var(--primary-color);
     border-right: none;
-    width: 40%;
+    width: 35%;
     padding: 20px;
     color: var(--primary-color);
     font-size: 16px;
     line-height: 2;
+    text-align: justify;
 }
 
 .bigText {
@@ -31,7 +32,8 @@
 }
 
 #missionImg {
-    width: 40%;
+    width: 45%;
+    max-width: 700px;
     box-shadow: var(--box-shadow);
 }
 
