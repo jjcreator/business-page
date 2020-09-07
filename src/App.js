@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from "./components/Navbar"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import './App.css';
@@ -7,19 +7,9 @@ import About from './components/AboutPage/About';
 import Contact from './components/ContactPage/Contact';
 import MobileNavbar from './components/MobileNavbar';
 
-const imageSources = ["images/city.jpg", "images/email.jpg", "images/man-in-black-holding-phone-618613.jpg", "images/people.jpg", "images/phone.jpg", "images/team.jpg"];
-
 function App() {
 
-  useEffect(() => {
-    imageSources.map(srcText => {
-      let image = new Image();
-      image.src = srcText;
-      return image
-    });
-  }, []);
-
-  return (
+   return (
       <Router basename={process.env.PUBLIC_URL}>
         <MobileNavbar/>
         <Navbar/>

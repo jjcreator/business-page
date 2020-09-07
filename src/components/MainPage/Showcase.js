@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import styles from "../../modules/showcaseStyle.module.css"
 import team from "../../images/team.jpg"
+import aboutImg from "../../images/team2.jpg"
+import contactImg from "../../images/contact.jpg"
 
 function Showcase() {
 
@@ -14,6 +16,8 @@ function Showcase() {
             <h1 className={"pop"} id={styles.showcaseTitle}>FAKE LAW ON YOUR SIDE</h1>
             <div className={"pop"} id={styles.showcaseBody}>
                 <img id={styles.teamImg} src={team} alt="the team"/>
+                <img src={aboutImg} alt="about" style={{width: "0"}}/>
+                <img src={contactImg} alt="the team" style={{width: "0"}}/>
                 <div className="flexColumn" id={styles.showcaseDescription}>
                     <h2 id={styles.showcaseHeader}>Best fake specialists</h2>
                     <p id={styles.showcaseParagraph}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>

@@ -109,7 +109,7 @@
 
 /* -- Media Queries -- */
    
-@media (max-width: 1300px) {
+@media (max-width: 1380px) {
     #showcaseDescription {
         width: 42%;
     }
@@ -128,7 +128,7 @@
     }
 
     #teamImg {
-        width: 50%;
+        width: 55%;
     }
 }
 

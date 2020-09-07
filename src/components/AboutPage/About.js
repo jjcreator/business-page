@@ -10,7 +10,7 @@ function About() {
         <div className={`${styles.flex} ${styles.animated}`} id={styles.aboutMainPage}>
             <Shape text="About us"/>
             <AboutColumns/>
-            <img id={styles.waveBottom} src={waveImg} alt="wave img"/>
+            <img onLoad={loadHandler} id={styles.waveBottom} src={waveImg} alt="wave img"/>
         </div>
     )
 }
