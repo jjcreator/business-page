@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jjcreator.github.io/business_page",
-  "name": "business_page",
+  "homepage": "https://jjcreator.github.io/business-page",
+  "name": "business-page",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
