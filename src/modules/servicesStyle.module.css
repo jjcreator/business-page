@@ -41,8 +41,8 @@
 .bottomText {
     margin-bottom: 2vh;
     text-transform: uppercase;
-    color: var(--attention-color);
-    font-weight: bolder;
+    color: var(--text-color);
+    font-weight: 500;
     font-size: 25px;
     line-height: 1;
 }

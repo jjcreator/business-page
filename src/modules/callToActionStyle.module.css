@@ -18,8 +18,8 @@
 }
 
 #callToAction span {
-    color: var(--attention-color);
-    font-weight: bolder;
+    color: var(--text-color);
+    font-weight: 700;
 }
 
 #ctaImg {
