@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/business_page/static/css/main.2e1fcab3.chunk.css",
-    "main.js": "/business_page/static/js/main.557529ba.chunk.js",
-    "main.js.map": "/business_page/static/js/main.557529ba.chunk.js.map",
-    "runtime-main.js": "/business_page/static/js/runtime-main.0b1de0ce.js",
-    "runtime-main.js.map": "/business_page/static/js/runtime-main.0b1de0ce.js.map",
-    "static/js/2.140d32e9.chunk.js": "/business_page/static/js/2.140d32e9.chunk.js",
-    "static/js/2.140d32e9.chunk.js.map": "/business_page/static/js/2.140d32e9.chunk.js.map",
-    "index.html": "/business_page/index.html",
-    "precache-manifest.0ff40207c37b620e01443dcee70424d7.js": "/business_page/precache-manifest.0ff40207c37b620e01443dcee70424d7.js",
-    "service-worker.js": "/business_page/service-worker.js",
-    "static/css/main.2e1fcab3.chunk.css.map": "/business_page/static/css/main.2e1fcab3.chunk.css.map",
-    "static/js/2.140d32e9.chunk.js.LICENSE.txt": "/business_page/static/js/2.140d32e9.chunk.js.LICENSE.txt",
-    "static/media/showcaseStyle.module.css": "/business_page/static/media/city.3d58a996.jpg",
-    "static/media/contact.jpg": "/business_page/static/media/contact.3a02b5f8.jpg",
-    "static/media/guy.jpg": "/business_page/static/media/guy.2346e925.jpg",
-    "static/media/man-calling.jpg": "/business_page/static/media/man-calling.ff635e29.jpg",
-    "static/media/team.jpg": "/business_page/static/media/team.401a395e.jpg",
-    "static/media/team2.jpg": "/business_page/static/media/team2.4d1a794f.jpg",
-    "static/media/woman1.jpg": "/business_page/static/media/woman1.89e5e4ee.jpg"
+    "main.css": "/business-page/static/css/main.0482609a.chunk.css",
+    "main.js": "/business-page/static/js/main.41c06aa7.chunk.js",
+    "main.js.map": "/business-page/static/js/main.41c06aa7.chunk.js.map",
+    "runtime-main.js": "/business-page/static/js/runtime-main.ccd0af71.js",
+    "runtime-main.js.map": "/business-page/static/js/runtime-main.ccd0af71.js.map",
+    "static/js/2.50aea28c.chunk.js": "/business-page/static/js/2.50aea28c.chunk.js",
+    "static/js/2.50aea28c.chunk.js.map": "/business-page/static/js/2.50aea28c.chunk.js.map",
+    "index.html": "/business-page/index.html",
+    "precache-manifest.c21ef3c59d8680bb7c678adad3dc486f.js": "/business-page/precache-manifest.c21ef3c59d8680bb7c678adad3dc486f.js",
+    "service-worker.js": "/business-page/service-worker.js",
+    "static/css/main.0482609a.chunk.css.map": "/business-page/static/css/main.0482609a.chunk.css.map",
+    "static/js/2.50aea28c.chunk.js.LICENSE.txt": "/business-page/static/js/2.50aea28c.chunk.js.LICENSE.txt",
+    "static/media/showcaseStyle.module.css": "/business-page/static/media/city.3d58a996.jpg",
+    "static/media/contact.jpg": "/business-page/static/media/contact.3a02b5f8.jpg",
+    "static/media/guy.jpg": "/business-page/static/media/guy.2346e925.jpg",
+    "static/media/man-calling.jpg": "/business-page/static/media/man-calling.ff635e29.jpg",
+    "static/media/team.jpg": "/business-page/static/media/team.401a395e.jpg",
+    "static/media/team2.jpg": "/business-page/static/media/team2.4d1a794f.jpg",
+    "static/media/woman1.jpg": "/business-page/static/media/woman1.89e5e4ee.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b1de0ce.js",
-    "static/js/2.140d32e9.chunk.js",
-    "static/css/main.2e1fcab3.chunk.css",
-    "static/js/main.557529ba.chunk.js"
+    "static/js/runtime-main.ccd0af71.js",
+    "static/js/2.50aea28c.chunk.js",
+    "static/css/main.0482609a.chunk.css",
+    "static/js/main.41c06aa7.chunk.js"
   ]
 }
