@@ -168,7 +168,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     
     #mainContactBox {
         flex-direction: column;
@@ -184,7 +184,7 @@
     }
 
     .flexWrapper:first-of-type {
-        height: 70%;
+        height: 60%;
         justify-content: center;
     }
 
@@ -271,8 +271,8 @@
 
     #contact > :first-child {
         position: absolute;
-        top: 5%;
-        left: 15%;
+        margin-top: 25vh;
+        margin-right: 50vw;
     }
 
     .contactHeader {
@@ -282,13 +282,15 @@
     #mainContactBox {
         flex-direction: row-reverse;
         justify-content: center;
+        align-items: flex-end;
         padding: 0;
         height: 100%;
         margin-top: 0;
     }
 
     #form {
-        width: 95%;
+        width: 100%;
+        /* background-color: var(--primary-color) */
     }
 
     #form input {
@@ -311,12 +313,25 @@
         margin-bottom: 2%;
     }
 
+    .flexWrapper:first-of-type {
+        height: 100%;
+        margin: 0;
+    }
+
+    .flexWrapper:nth-of-type(2) {
+        height: 50%;
+        margin: 0;
+    }
+
     #contactCardList {
         padding: 10px;
+        height: auto;
+        box-shadow: none;
+        height: 100%;
     }
 
     #contactCardList li {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 

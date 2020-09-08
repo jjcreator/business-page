@@ -109,11 +109,6 @@
     }
 }
 
-@media (max-width: 850px) and (orientation: landscape) {
-    .testimonialCard {
-        width: 60%;
-    }
-}
 
 @media (max-width: 680px) {
     #testimonials {
@@ -121,7 +116,6 @@
         width: 90%;
     }
     .testimonialCard {
-        width: 100%;
         min-height: 250px;
     }
     .testimonialImg {
@@ -130,23 +124,14 @@
 }
 
 @media (max-width: 680px) and (orientation: landscape) {
-    .testimonialCard {
-        width: 100%;
-    }
     .testimonialImg {
         width: 20%;
-    }
-}
-
-@media screen and (max-width: 580px) and (orientation: landscape) {
-    .testimonialCard {
-        width: 85%;
     }
 }
 
 @media (max-width: 580px) {
     #testimonials {
         grid-template-columns: 1fr;
-        width: 60%;
+        width: 80%;
     }
 }
