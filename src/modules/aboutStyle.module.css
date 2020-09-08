@@ -32,7 +32,6 @@
 #teamImg {
     width: 38%;
     box-shadow: 2px 2px 5px black;
-    
 }
 
 #aboutText {
@@ -55,8 +54,19 @@
 }
 
 .animated {
-    animation: pop 0.4s forwards ease-in;
+    -webkit-animation: pop 0.4s forwards ease-in;
+            animation: pop 0.4s forwards ease-in;
     }
+
+@-webkit-keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes pop {
     0% {

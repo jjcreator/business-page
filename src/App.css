@@ -26,7 +26,17 @@
 }
 
 .expand {
-  animation: expand 0.5s ease-in forwards;
+  -webkit-animation: expand 0.5s ease-in forwards;
+          animation: expand 0.5s ease-in forwards;
+}
+
+@-webkit-keyframes expand {
+  0% {
+      width: 0px
+  }
+  100% {
+      width: 250px;
+  }
 }
 
 @keyframes expand {
@@ -39,7 +49,8 @@
 }
 
 .pop {
-  animation: pop 0.4s forwards ease-in;
+  -webkit-animation: pop 0.4s forwards ease-in;
+          animation: pop 0.4s forwards ease-in;
 }
 
 .actionButton {
@@ -59,6 +70,18 @@
 .actionButton:hover {
   transform: translateY(2%);
   background-color: rgb(190, 29, 61);
+}
+  
+@-webkit-keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(1%);
+    }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
 }
   
 @keyframes pop {
@@ -87,9 +110,18 @@ a {
   }
   
   .isAnimated {
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
     /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
     opacity: 1 !important;
+  }
+  @-webkit-keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 200px;
+    }
   }
   @keyframes expand {
     0% {
@@ -102,6 +134,14 @@ a {
 }
 
 @media (max-width: 680px) {
+  @-webkit-keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 150px;
+    }
+  }
   @keyframes expand {
     0% {
         width: 0px
@@ -113,6 +153,14 @@ a {
 }
 
 @media (max-width: 360px) {
+  @-webkit-keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 125px;
+    }
+  }
   @keyframes expand {
     0% {
         width: 0px

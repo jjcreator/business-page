@@ -95,7 +95,17 @@
 }
 
 #doubleArrow:hover {
-    animation: flashing 0.3s ease-in infinite alternate;
+    -webkit-animation: flashing 0.3s ease-in infinite alternate;
+            animation: flashing 0.3s ease-in infinite alternate;
+}
+
+@-webkit-keyframes flashing {
+    0% {
+        color:var(--text-color);
+    }
+    100% {
+        color: transparent;
+    }
 }
 
 @keyframes flashing {

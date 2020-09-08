@@ -68,7 +68,17 @@
     display: none;
     background: none;
     overflow: hidden;
-    animation: appear 800ms forwards;
+    -webkit-animation: appear 800ms forwards;
+            animation: appear 800ms forwards;
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes appear {
